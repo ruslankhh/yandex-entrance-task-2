@@ -1,5 +1,12 @@
 # Приложение для создания и редактирования информации о встречах сотрудников. Вёрстка
 
+Написано для Node.js 8 и использует библиотеки:
+
+- babel
+- gulp
+- postcss
+- posthtml
+
 ## Задание
 
 Нужно сверстать страницу списка переговрок и форму редактирования встречи. Для каждой страницы дизайнер подготовил макет (отдельно для большого экрана и мобильных телефонов).
@@ -37,3 +44,9 @@
 npm i
 npm run dev
 ```
+
+## Выполнение задания
+
+### 1. Workflow
+
+Добавил task runner и сборщики на основе [Babel](https://github.com/babel/babel), [Gulp](https://github.com/gulpjs/gulp), [PostCSS](https://github.com/postcss/postcss), [PostHTML](https://github.com/posthtml/posthtml).
