@@ -1,0 +1,9 @@
+bower_components/
+node_modules/
+*.log
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db

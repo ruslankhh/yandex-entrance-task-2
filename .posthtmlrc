@@ -1,0 +1,21 @@
+{
+  "plugins": {
+    "posthtml-include": {
+      "root": "app/components"
+    },
+    "posthtml-extend": {
+      "root": "app/templates"
+    },
+    "posthtml-mixins": {
+      "key": "value"
+    },
+    "posthtml-expressions": {
+      "locals": {}
+    },
+    "posthtml-bem": {
+      "elemPrefix": "__",
+      "modPrefix": "--",
+      "modDlmtr": "-"
+    }
+  }
+}
