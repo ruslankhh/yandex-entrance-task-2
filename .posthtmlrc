@@ -1,10 +1,10 @@
 {
   "plugins": {
-    "posthtml-include": {
-      "root": "app/blocks"
-    },
     "posthtml-extend": {
-      "root": "app/templates"
+      "root": "app"
+    },
+    "posthtml-include": {
+      "root": "app"
     },
     "posthtml-mixins": {
       "key": "value"

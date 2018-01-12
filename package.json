@@ -12,6 +12,7 @@
     "node": ">=8.4.0"
   },
   "scripts": {
+    "block": "./bin/block.sh",
     "build": "NODE_ENV=production gulp build",
     "dev": "NODE_ENV=development gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
