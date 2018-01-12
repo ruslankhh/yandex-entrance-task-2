@@ -1,7 +1,7 @@
 {
   "plugins": {
     "posthtml-include": {
-      "root": "app/components"
+      "root": "app/blocks"
     },
     "posthtml-extend": {
       "root": "app/templates"
