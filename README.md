@@ -50,3 +50,37 @@ npm run dev
 ### 1. Workflow
 
 Добавил task runner и сборщики на основе [Babel](https://github.com/babel/babel), [Gulp](https://github.com/gulpjs/gulp), [PostCSS](https://github.com/postcss/postcss), [PostHTML](https://github.com/posthtml/posthtml).
+
+### 2. Архитектура
+
+В качестве архитектуры использовал компонентый подход. В качетсве методологии — БЭМ.
+
+#### Файловая структура
+
+Компоненты находятся в папке `blocks`, каждый в отдельной папке cо следующей файловой структурой:
+
+```
+blocks/
+└── block1/
+    ├── block1.post.css  // файл с миксином стилей
+    ├── block1.post.html // файл с миксином разметки
+    └── block1.js        // файл с реализацией интерфейса
+```
+
+#### Список компонентов
+
+- button
+- calendar
+- datepicker
+- icon
+- input
+- image
+- link
+- menu
+- modal
+- room-item
+- rooms-list
+- event-item
+- timetable
+- tooltip
+- user-item
