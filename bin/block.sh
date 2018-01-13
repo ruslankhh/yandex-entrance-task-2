@@ -2,7 +2,7 @@
 mkdir app/blocks/$1
 
 touch app/blocks/$1/$1.post.css
-cat >> app/blocks/$1/$1.post.css << EOM
+cat > app/blocks/$1/$1.post.css << EOM
 .$1 {
 
 }
@@ -10,10 +10,10 @@ EOM
 echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$1/$1.post.css\033[0m"
 
 touch app/blocks/$1/$1.post.html
-cat >> app/blocks/$1/$1.post.html << EOM
-<mixin name="$1" mods=" " mix=" " class=" " content=" ">
+cat > app/blocks/$1/$1.post.html << EOM
+<mixin name="$1" mods=" " mix=" " class=" ">
   <div block="$1" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
-    {{ content }}
+    <content></content>
   </div>
 </mixin>
 EOM
