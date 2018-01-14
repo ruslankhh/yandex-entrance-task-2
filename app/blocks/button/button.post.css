@@ -1,3 +1,31 @@
 .button {
+  position: relative;
 
+  &--round {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
+
+  &--close {
+    .button__text {
+      background-image: url($image-close-url);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &--hover {
+    .button--close {
+      .button__text {
+        background-image: url($image-close-hover-url);
+      }
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
 }

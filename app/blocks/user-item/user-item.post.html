@@ -1,5 +1,8 @@
-<define-mixin name="user-item" mods mix class>
-  <div block="user-item" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
+<define-mixin name="user-item" mods mix username userimage>
+  <div block="user-item" mods="{{ mods }}" mix="{{ mix }}">
+    <div elem="image" style="background-image: url({{ userimage }})"></div>
+    <div elem="name">{{ username }}</div>
+    <mixin name="button" mods="close round transparent" mix="block:user-item elem:button"/>
     <content></content>
   </div>
 </define-mixin>

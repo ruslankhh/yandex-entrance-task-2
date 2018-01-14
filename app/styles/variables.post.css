@@ -11,7 +11,7 @@ $content-width: 1000px;
 // Container
 $container-padding-x: 12px;
 $container-padding-top: 10px;
-$container-padding-bottom: 12px;
+$container-padding-bottom: 13px;
 $container-width: calc($content-width + 2 * $container-padding-x);
 $container-bg-color: #fff;
 $container-bg-color-light: #E9ECEF;
@@ -23,3 +23,8 @@ $row-width: $content-width;
 // Grid
 $grid-padding-x: 20px;
 $grid-padding-y: 10px;
+
+// Images
+
+$image-close-url: "../images/close.svg";
+$image-close-hover-url: "../images/close-hover.svg";
