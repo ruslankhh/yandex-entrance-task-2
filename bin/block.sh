@@ -1,38 +1,41 @@
 #!/bin/bash
-mkdir app/blocks/$1
+for i in "$@"; do
+	mkdir app/blocks/$i
 
-touch app/blocks/$1/$1.post.css
-cat > app/blocks/$1/$1.post.css << EOM
-.$1 {
+	touch app/blocks/$i/$i.post.css
+	cat > app/blocks/$i/$i.post.css <<- EOM
+	.$i {
 
-}
-EOM
-echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$1/$1.post.css\033[0m"
+	}
+	EOM
+	echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$i/$i.post.css\033[0m"
 
-touch app/blocks/$1/$1.post.html
-cat > app/blocks/$1/$1.post.html << EOM
-<mixin name="$1" mods=" " mix=" " class=" ">
-  <div block="$1" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
-    <content></content>
-  </div>
-</mixin>
-EOM
-echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$1/$1.post.html\033[0m"
+	touch app/blocks/$i/$i.post.html
+	cat > app/blocks/$i/$i.post.html <<- EOM
+	<mixin name="$i" mods=" " mix=" " class=" ">
+	  <div block="$i" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
+	    <content></content>
+	  </div>
+	</mixin>
+	EOM
+	echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$i/$i.post.html\033[0m"
 
-touch app/blocks/$1/$1.js
-echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$1/$1.js\033[0m"
+	touch app/blocks/$i/$i.js
+	echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$i/$i.js\033[0m"
 
-cat >> app/styles/main.post.css << EOM
-@import '../blocks/$1/$1.post.css';
-EOM
-echo -e "[\033[34mbash\033[0m] Update \033[35mapp/styles/main.post.css\033[0m"
+	cat >> app/styles/main.post.css <<- EOM
+	@import '../blocks/$i/$i.post.css';
+	EOM
+	echo -e "[\033[34mbash\033[0m] Update \033[35mapp/styles/main.post.css\033[0m"
 
-ed -s app/templates/main.post.html << EOM
-/<\/head>/i
-  <include src="blocks/$1/$1.post.html"></include>
-.
-wq
-EOM
-echo -e "[\033[34mbash\033[0m] Update \033[35mapp/templates/main.post.html\033[0m"
+	ed -s app/templates/main.post.html <<- EOM
+	/<\/head>/i
+	  <include src="blocks/$i/$i.post.html"></include>
+	.
+	wq
+	EOM
+	echo -e "[\033[34mbash\033[0m] Update \033[35mapp/templates/main.post.html\033[0m"
 
-echo -e "[\033[34mbash\033[0m] Block '\033[36m$1\033[0m' created."
+	echo -e "[\033[34mbash\033[0m] Block '\033[36m$i\033[0m' created."
+
+done
