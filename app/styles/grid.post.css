@@ -12,7 +12,14 @@
     width: 100%;
   }
 
-  &--full-width {
+  &__title {
+    color: $container-title-color;
+    letter-spacing: 0.91px;
+    margin: 11px 0 6px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &--width-full {
     max-width: 100%;
 
     .container__row {
@@ -25,11 +32,11 @@
     margin-right: auto;
   }
 
-  &--light {
+  &--bg-light {
     background-color: $container-bg-color-light;
   }
 
-  &--lighter {
+  &--bg-lighter {
     background-color: $container-bg-color-lighter;
   }
 }
@@ -64,7 +71,7 @@
     font-weight: bold;
     letter-spacing: 0.5px;
     line-height: 13px;
-    padding-bottom: 11px;
+    padding-bottom: 16px;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
   }
