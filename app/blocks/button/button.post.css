@@ -1,13 +1,19 @@
 .button {
   position: relative;
+  border: none;
 
   &--round {
-    width: 24px;
-    height: 24px;
     border-radius: 12px;
+    height: 24px;
+    padding: 0;
+    width: 24px;
   }
 
-  &--close {
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--type-close {
     .button__text {
       background-image: url($image-close-url);
       background-repeat: no-repeat;
@@ -17,7 +23,7 @@
     }
   }
 
-  &--edit {
+  &--type-edit {
     background-color: #E9ECEF;
 
     .button__text {
@@ -31,7 +37,7 @@
   }
 
   &--hover {
-    &.button--close {
+    &.button--type-close {
       .button__text {
         background-image: url($image-close-hover-url);
       }
@@ -39,14 +45,10 @@
   }
 
   &--focused {
-    &.button--edit {
+    &.button--type-edit {
       .button__text {
         opacity: 1;
       }
     }
-  }
-
-  &--transparent {
-    background-color: transparent;
   }
 }
