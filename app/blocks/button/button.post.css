@@ -17,10 +17,31 @@
     }
   }
 
+  &--edit {
+    background-color: #E9ECEF;
+
+    .button__text {
+      background-image: url($image-edit-url);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      opacity: 0.43;
+      width: 100%;
+    }
+  }
+
   &--hover {
-    .button--close {
+    &.button--close {
       .button__text {
         background-image: url($image-close-hover-url);
+      }
+    }
+  }
+
+  &--focused {
+    &.button--edit {
+      .button__text {
+        opacity: 1;
       }
     }
   }

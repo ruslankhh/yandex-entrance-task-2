@@ -25,6 +25,6 @@ $grid-padding-x: 20px;
 $grid-padding-y: 10px;
 
 // Images
-
 $image-close-url: "../images/close.svg";
 $image-close-hover-url: "../images/close-hover.svg";
+$image-edit-url: "../images/edit.svg";
