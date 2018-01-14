@@ -1,0 +1,9 @@
+.page {
+  &--elements {
+    padding-top: 27px;
+
+    .container {
+      padding-left: 80px;
+    }
+  }
+}

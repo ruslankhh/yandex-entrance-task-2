@@ -1,0 +1,51 @@
+<extends src="templates/main.post.html">
+  <block name="title">Shri 2018 2</block>
+  <block name="content">
+    <div block="page" mods="elements">
+      <div block="container" mods="full-width">
+        <div block="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Normal</div>
+              <mixin name="room-item" title="Прачечная" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Hover</div>
+              <mixin name="room-item" mods="hover" title="Жёлтый дом" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Pressed</div>
+              <mixin name="room-item" mods="pressed" title="Жёлтый дом" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+                <div elem="item-title">Disabled</div>
+              <mixin name="room-item" mods="disabled" title="Оранжевый тюльпан" capacity="до 10 человек"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div block="container" mods="full-width lighter">
+        <div block="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Normal</div>
+              <mixin name="room-item" title="Прачечная" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Hover</div>
+              <mixin name="room-item" mods="hover" title="Жёлтый дом" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+              <div elem="item-title">Pressed</div>
+              <mixin name="room-item" mods="pressed" title="Жёлтый дом" capacity="до 10 человек"/>
+            </div>
+            <div elem="item" mods="col-4">
+                <div elem="item-title">Disabled</div>
+              <mixin name="room-item" mods="disabled" title="Оранжевый тюльпан" capacity="до 10 человек"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </block>
+</extends>

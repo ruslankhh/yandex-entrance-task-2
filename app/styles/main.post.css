@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
-/* @import 'normalize.css'; */
+@import 'normalize.css';
+
+@import './variables.post.css';
+
+@import './pages.post.css';
+@import './grid.post.css';
+
 @import '../blocks/button/button.post.css';
 @import '../blocks/calendar/calendar.post.css';
 @import '../blocks/datepicker/datepicker.post.css';
@@ -16,3 +22,11 @@
 @import '../blocks/timetable/timetable.post.css';
 @import '../blocks/tooltip/tooltip.post.css';
 @import '../blocks/user-item/user-item.post.css';
+
+body {
+  font-family: $font-family;
+  
+  &, * {
+    box-sizing: border-box;
+  }
+}
