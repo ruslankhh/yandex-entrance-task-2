@@ -1,3 +1,18 @@
 @charset "UTF-8";
 
 /* @import 'normalize.css'; */
+@import '../blocks/button/button.post.css';
+@import '../blocks/calendar/calendar.post.css';
+@import '../blocks/datepicker/datepicker.post.css';
+@import '../blocks/icon/icon.post.css';
+@import '../blocks/input/input.post.css';
+@import '../blocks/image/image.post.css';
+@import '../blocks/link/link.post.css';
+@import '../blocks/menu/menu.post.css';
+@import '../blocks/modal/modal.post.css';
+@import '../blocks/room-item/room-item.post.css';
+@import '../blocks/rooms-list/rooms-list.post.css';
+@import '../blocks/event-item/event-item.post.css';
+@import '../blocks/timetable/timetable.post.css';
+@import '../blocks/tooltip/tooltip.post.css';
+@import '../blocks/user-item/user-item.post.css';
