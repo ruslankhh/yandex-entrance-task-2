@@ -1,3 +1,46 @@
 .room-item {
+  padding: 5px 0;
 
+  &,
+  &--normal {
+    &__title {
+      font-family: $font-family-medium;
+      color: #000000;
+      font-size: 15px;
+      line-height: 17px;
+    }
+
+    &__capacity {
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 2px;
+    }
+  }
+
+  &--hover {
+    .room-item__title {
+      font-family: $font-family-bold;
+      color: #0070E0;
+    }
+  }
+
+  &--pressed {
+    .room-item__title {
+      font-family: $font-family-bold;
+      color: #1D54FE;
+    }
+  }
+
+  &--disabled {
+    .room-item__title {
+      font-family: $font-family-medium;
+      color: #858E98;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .room-item__capacity {
+      color: #858E98;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
 }
