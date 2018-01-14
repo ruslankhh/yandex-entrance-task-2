@@ -12,11 +12,11 @@ for i in "$@"; do
 
 	touch app/blocks/$i/$i.post.html
 	cat > app/blocks/$i/$i.post.html <<- EOM
-	<mixin name="$i" mods=" " mix=" " class=" ">
+	<define-mixin name="$i" mods mix class>
 	  <div block="$i" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
 	    <content></content>
 	  </div>
-	</mixin>
+	</define-mixin>
 	EOM
 	echo -e "[\033[34mbash\033[0m] Create \033[35mapp/blocks/$i/$i.post.html\033[0m"
 
