@@ -110,6 +110,7 @@ blocks/
 - button
 - calendar
 - datepicker
+- event-item
 - icon
 - input
 - image
@@ -118,7 +119,7 @@ blocks/
 - modal
 - room-item
 - rooms-list
-- event-item
+- slot
 - timetable
 - tooltip
 - user-item
