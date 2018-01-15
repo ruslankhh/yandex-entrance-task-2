@@ -45,11 +45,11 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="button" mods="type:edit round" />
+              <mixin name="button" mods="icon:edit circle" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Focused</div>
-              <mixin name="button" mods="type:edit round focused" />
+              <mixin name="button" mods="icon:edit circle focused" />
             </div>
             <div elem="item" mods="col:4"></div>
             <div elem="item" mods="col:4"></div>
@@ -62,15 +62,15 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="slot" />
+              <mixin name="slot" mods="type:primary"/>
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Hover</div>
-              <mixin name="slot" mods="hover" />
+              <mixin name="slot" mods="type:primary hover" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Pressed</div>
-              <mixin name="slot" mods="pressed" />
+              <mixin name="slot" mods="type:primary pressed" />
             </div>
             <div elem="item" mods="col:4"></div>
           </div>
@@ -82,17 +82,61 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="slot" mods="type:busy"/>
+              <mixin name="slot" mods="type:secondary"/>
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Hover</div>
-              <mixin name="slot" mods="type:busy hover" />
+              <mixin name="slot" mods="type:secondary hover" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Pressed</div>
-              <mixin name="slot" mods="type:busy pressed" />
+              <mixin name="slot" mods="type:secondary pressed" />
             </div>
             <div elem="item" mods="col:4"></div>
+          </div>
+        </div>
+      </div>
+      <div block="container" mods="id:6 width:full bg:lighter">
+        <div elem="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Normal</div>
+              <mixin name="button" mods="type:primary" text="Создать встречу" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Hover</div>
+              <mixin name="button" mods="type:primary hover" text="Создать встречу" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Pressed</div>
+              <mixin name="button" mods="type:primary pressed" text="Создать встречу" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Disabled</div>
+              <mixin name="button" mods="type:primary disabled" text="Создать встречу" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div block="container" mods="id:8 width:full bg:lighter">
+        <div elem="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Normal</div>
+              <mixin name="button" mods="type:secondary" text="Отмена" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Hover</div>
+              <mixin name="button" mods="type:secondary hover" text="Отмена" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Pressed</div>
+              <mixin name="button" mods="type:secondary pressed" text="Отмена" />
+            </div>
+            <div elem="item" mods="col:4">
+              <div elem="item-title">Disabled</div>
+              <mixin name="button" mods="type:secondary disabled" text="Отмена" />
+            </div>
           </div>
         </div>
       </div>

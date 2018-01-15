@@ -1,19 +1,76 @@
 .button {
-  position: relative;
+  font-family: $button-font-family;
+  background-color: $button-bg-color;
   border: none;
+  border-radius: $button-border-radius;
+  color: $button-color;
+  padding: $button-padding-y $button-padding-x;
+  position: relative;
 
-  &--round {
-    border-radius: 12px;
-    height: 24px;
-    padding: 0;
-    width: 24px;
+  &__text {
+    font-size: $button-font-size;
+    line-height: $button-line-height;
+  }
+
+  &--type-primary {
+    background-color: $button-primary-bg-color;
+    color: $button-primary-color;
+
+    .button__text {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &.button--hover {
+      background-color: $button-primary-hover-bg-color;
+    }
+
+    &.button--pressed {
+      background-color: $button-primary-pressed-bg-color;
+    }
+
+    &.button--disabled {
+      background-color: $button-primary-disabled-bg-color;
+
+      .button__text {
+        color: $button-disabled-color;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
+  &--type-secondary {
+    background-color: $button-secondary-bg-color;
+
+    &.button--hover {
+      background-color: $button-secondary-hover-bg-color;
+    }
+
+    &.button--pressed {
+      background-color: $button-secondary-pressed-bg-color;
+    }
+
+    &.button--disabled {
+      background-color: $button-secondary-disabled-bg-color;
+
+      .button__text {
+        color: $button-disabled-color;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
   }
 
   &--transparent {
     background-color: transparent;
   }
 
-  &--type-close {
+  &--circle {
+    border-radius: 12px;
+    height: 24px;
+    padding: 0;
+    width: 24px;
+  }
+
+  &--icon-close {
     .button__text {
       background-image: url($image-close-url);
       background-repeat: no-repeat;
@@ -21,11 +78,15 @@
       height: 100%;
       width: 100%;
     }
+
+    &.button--hover {
+      .button__text {
+        background-image: url($image-close-hover-url);
+      }
+    }
   }
 
-  &--type-edit {
-    background-color: #E9ECEF;
-
+  &--icon-edit {
     .button__text {
       background-image: url($image-edit-url);
       background-repeat: no-repeat;
@@ -34,18 +95,8 @@
       opacity: 0.43;
       width: 100%;
     }
-  }
 
-  &--hover {
-    &.button--type-close {
-      .button__text {
-        background-image: url($image-close-hover-url);
-      }
-    }
-  }
-
-  &--focused {
-    &.button--type-edit {
+    &.button--focused {
       .button__text {
         opacity: 1;
       }

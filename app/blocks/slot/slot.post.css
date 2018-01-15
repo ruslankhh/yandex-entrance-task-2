@@ -10,45 +10,43 @@
     text-align: center;
   }
 
-  &,
-  &--normal {
-    background-color: $slot-bg-color;
-  }
-
-  &--hover,
-  &--pressed {
-    border-radius: $slot-border-radius;
-
-    .slot__text {
-      display: block;
-    }
-  }
-
-  &--hover {
-    background-color: $slot-hover-bg-color;
-  }
-
-  &--pressed {
-    background-color: $slot-pressed-bg-color;
-  }
-
-  &--type-busy {
+  &--type-primary {
     &,
     &.slot--normal {
-      background-color: $slot-type-busy-bg-color;
-      border-radius: 0;
+      background-color: $slot-primary-bg-color;
+    }
+
+    &.slot--hover,
+    &.slot--pressed {
+      border-radius: $slot-border-radius;
 
       .slot__text {
-        display: none;
+        display: block;
       }
     }
 
     &.slot--hover {
-      background-color: $slot-type-busy-hover-bg-color;
+      background-color: $slot-primary-hover-bg-color;
     }
 
     &.slot--pressed {
-      background-color: $slot-type-busy-pressed-bg-color;
+      background-color: $slot-primary-pressed-bg-color;
+    }
+  }
+
+  &--type-secondary {
+    &,
+    &.slot--normal {
+      background-color: $slot-secondary-bg-color;
+      border-radius: 0;
+    }
+
+    &.slot--hover {
+      background-color: $slot-secondary-hover-bg-color;
+    }
+
+    &.slot--pressed {
+      background-color: $slot-secondary-pressed-bg-color;
     }
   }
 }

@@ -6,10 +6,9 @@ $font-family-bold: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 
 $font-family: $font-family-regular;
 
-// Sizes
+// Grid
 $content-width: 1000px;
 
-// Container
 $container-padding-x: 12px;
 $container-padding-top: 10px;
 $container-padding-bottom: 18px;
@@ -19,10 +18,8 @@ $container-bg-color-light: #E9ECEF;
 $container-bg-color-lighter: rgba(73, 76, 83, 0.02);
 $container-title-color: #C7C7C7;
 
-// Row
 $row-width: $content-width;
 
-// Grid
 $grid-padding-x: 20px;
 $grid-padding-y: 10px;
 
@@ -34,9 +31,32 @@ $image-edit-url: "../images/edit.svg";
 // Slot
 $slot-color: #FFFFFF;
 $slot-border-radius: 2px;
-$slot-bg-color: #FFFFFF;
-$slot-hover-bg-color: #1D54FE;
-$slot-pressed-bg-color: #1D00FE;
-$slot-type-busy-bg-color: #D5DFE9;
-$slot-type-busy-hover-bg-color: #98A9B9;
-$slot-type-busy-pressed-bg-color: #98A9B9;
+
+$slot-primary-bg-color: #FFFFFF;
+$slot-primary-hover-bg-color: #1D54FE;
+$slot-primary-pressed-bg-color: #1D00FE;
+$slot-secondary-bg-color: #D5DFE9;
+$slot-secondary-hover-bg-color: #98A9B9;
+$slot-secondary-pressed-bg-color: #8594A2;
+
+// Button
+$button-bg-color: #E9ECEF;
+$button-border-radius: 4px;
+$button-color: #000000;
+$button-disabled-color: rgba(0, 0, 0, 0.2);
+$button-font-size: 13px;
+$button-font-family: $font-family-medium;
+$button-line-height: 16px;
+$button-padding-x: 16px;
+$button-padding-y: 10px;
+
+$button-primary-color: #FFFFFF;
+$button-primary-bg-color: #007DFF;
+$button-primary-hover-bg-color: #0059FF;
+$button-primary-pressed-bg-color: #0217FE;
+$button-primary-disabled-bg-color: #E9ECEF;
+$button-secondary-color: $button-color;
+$button-secondary-bg-color: #E9ECEF;
+$button-secondary-hover-bg-color: #DDE0E4;
+$button-secondary-pressed-bg-color: #C8CDD3;
+$button-secondary-disabled-bg-color: #E2E5E8;
