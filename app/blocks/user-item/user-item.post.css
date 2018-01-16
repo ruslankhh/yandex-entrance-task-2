@@ -31,14 +31,6 @@
     right: 4px;
   }
 
-  &--hover {
-    .user-item__button {
-      .button__text {
-        background-image: url($image-close-hover-url);
-      }
-    }
-  }
-
   @mixin outline;
   @mixin disabled;
 }

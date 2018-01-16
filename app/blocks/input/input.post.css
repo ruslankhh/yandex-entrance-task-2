@@ -58,15 +58,21 @@
       }
     }
 
+    &:hover,
     &--hover {
       border-color: $input-hover-border-color;
     }
 
+    &:focus,
     &--focus {
       border-color: $input-focus-border-color;
 
       & ~ .input__button.button--icon-arrow-down {
         display: block;
+      }
+
+      & ~ .input__button.button--icon-close {
+        display: none;
       }
 
       &.input__control--opened {
@@ -81,8 +87,10 @@
     }
 
     &--filled {
-      & ~ .input__button.button--icon-close {
-        display: block;
+      &:not(:focus):not(&--focus) {
+        & ~ .input__button.button--icon-close {
+          display: block;
+        }
       }
     }
 

@@ -14,6 +14,7 @@
     margin-top: 2px;
   }
 
+  &:hover,
   &--hover {
     .room-item__title {
       font-family: $font-family-bold;
@@ -21,6 +22,7 @@
     }
   }
 
+  &:active,
   &--active {
     .room-item__title {
       font-family: $font-family-bold;
@@ -28,6 +30,7 @@
     }
   }
 
+  &:disabled,
   &--disabled {
     .room-item__title {
       font-family: $font-family-medium;
@@ -41,6 +44,7 @@
     }
   }
 
+  @mixin cursor;
   @mixin outline;
   @mixin disabled;
 }

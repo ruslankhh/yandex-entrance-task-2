@@ -13,6 +13,8 @@
   &--type-primary {
     background-color: $slot-primary-bg-color;
 
+    &:hover,
+    &:active,
     &.slot--hover,
     &.slot--active {
       border-radius: $slot-border-radius;
@@ -22,10 +24,12 @@
       }
     }
 
+    &:hover,
     &.slot--hover {
       background-color: $slot-primary-hover-bg-color;
     }
 
+    &:active,
     &.slot--active {
       background-color: $slot-primary-active-bg-color;
     }
@@ -35,15 +39,18 @@
     background-color: $slot-secondary-bg-color;
     border-radius: 0;
 
+    &:hover,
     &.slot--hover {
       background-color: $slot-secondary-hover-bg-color;
     }
 
+    &:active,
     &.slot--active {
       background-color: $slot-secondary-active-bg-color;
     }
   }
 
+  @mixin cursor;
   @mixin outline;
   @mixin disabled;
 }
