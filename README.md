@@ -53,7 +53,7 @@ npm link
 
 ## Выполнение задания
 
-### 1. Workflow
+### 1. Инфраструктура
 
 Добавил task runner и сборщики на основе [Babel](https://github.com/babel/babel), [Gulp](https://github.com/gulpjs/gulp), [PostCSS](https://github.com/postcss/postcss), [PostHTML](https://github.com/posthtml/posthtml).
 
@@ -124,7 +124,7 @@ blocks/
 - tooltip
 - user-item
 
-### 3. Стили
+### 3. Вёрстка
 
 Есть несколько моментов, которые я хотел бы уточнить:
 
