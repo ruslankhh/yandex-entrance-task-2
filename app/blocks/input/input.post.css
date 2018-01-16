@@ -36,8 +36,8 @@
       line-height: $input-md-line-height;
       letter-spacing: $input-md-letter-spacing;
       padding-bottom: $input-md-padding-bottom;
-      padding-left: $input-md-padding-x;
-      padding-right: $input-md-padding-x;
+      padding-left: $input-md-padding-left;
+      padding-right: $input-md-padding-right;
       padding-top: $input-md-padding-top;
     }
 
@@ -53,8 +53,8 @@
       line-height: $input-lg-line-height;
       letter-spacing: $input-lg-letter-spacing;
       padding-bottom: $input-lg-padding-bottom;
-      padding-left: $input-lg-padding-x;
-      padding-right: $input-lg-padding-x;
+      padding-left: $input-lg-padding-left;
+      padding-right: $input-lg-padding-right;
       padding-top: $input-lg-padding-top;
     }
 

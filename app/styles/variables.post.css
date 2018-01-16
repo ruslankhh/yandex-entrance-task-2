@@ -98,7 +98,8 @@ $input-md-letter-spacing: 0.47px;
 $input-md-height: 38px;
 $input-md-padding-top: 11px;
 $input-md-padding-bottom: 12px;
-$input-md-padding-x: 8px;
+$input-md-padding-left: 8px;
+$input-md-padding-right: calc($input-md-height - 2 * $input-border-width);
 
 $input-lg-font-size: 15px;
 $input-lg-line-height: 17px;
@@ -106,7 +107,8 @@ $input-lg-letter-spacing: 0.55px;
 $input-lg-height: 44px;
 $input-lg-padding-top: 13px;
 $input-lg-padding-bottom: 14px;
-$input-lg-padding-x: 10px;
+$input-lg-padding-left: 10px;
+$input-lg-padding-right: calc($input-lg-height - 2 * $input-border-width);
 
 $input-hover-border-color: #007DFF;
 $input-focus-border-color: #007DFF;
