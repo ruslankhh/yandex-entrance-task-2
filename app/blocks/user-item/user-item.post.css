@@ -38,4 +38,7 @@
       }
     }
   }
+
+  @mixin outline;
+  @mixin disabled;
 }

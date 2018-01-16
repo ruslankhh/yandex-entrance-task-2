@@ -24,6 +24,9 @@ $grid-padding-top: 10px;
 $grid-padding-bottom: 14px;
 $grid-padding-x: 20px;
 
+// Outline
+$outline: none;
+
 // Images
 $image-arrow-down-url: "../images/arrow3.svg";
 $image-arrow-up-url: "../images/arrow4.svg";

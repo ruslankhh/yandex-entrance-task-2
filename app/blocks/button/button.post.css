@@ -4,6 +4,7 @@
   border: none;
   border-radius: $button-border-radius;
   color: $button-color;
+  cursor: pointer;
   position: relative;
   text-align: center;
 
@@ -215,4 +216,7 @@
       background-image: url($image-arrow-up-url);
     }
   }
+
+  @mixin outline;
+  @mixin disabled;
 }

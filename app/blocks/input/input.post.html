@@ -1,9 +1,10 @@
 <define-mixin name="input" mods mix id label type="text" placeholder value>
-  <div block="input" mods="{{ mods }}" mix="{{ mix }}">
+  <div block="input" mix="{{ mix }}">
     <label elem="label" for="{{ id }}">{{ label }}</label>
     <input
       id="{{ id }}"
       elem="control"
+      mods="{{ mods }}"
       type="{{ type }}"
       placeholder="{{ placeholder }}"
       value="{{ value }}"

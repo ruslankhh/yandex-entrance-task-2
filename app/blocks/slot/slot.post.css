@@ -43,4 +43,7 @@
       background-color: $slot-secondary-active-bg-color;
     }
   }
+
+  @mixin outline;
+  @mixin disabled;
 }

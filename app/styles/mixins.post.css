@@ -1,0 +1,14 @@
+@define-mixin outline {
+  &:focus,
+  &--focus {
+    outline: $outline;
+  }
+}
+
+@define-mixin disabled {
+  &[disabled],
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+}

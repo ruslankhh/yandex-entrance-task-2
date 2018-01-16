@@ -9,6 +9,13 @@
     letter-spacing: 0;
   }
 
+  &__button {
+    display: none;
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+  }
+
   &__control {
     border-color: $input-border-color;
     border-style: solid;
@@ -20,17 +27,8 @@
     &::placeholder {
       color: $input-placeholder-color;
     }
-  }
 
-  &__button {
-    display: none;
-    position: absolute;
-    right: 2px;
-    bottom: 0;
-  }
-
-  &--size-md {
-    .input__control {
+    &--size-md {
       font-size: $input-md-font-size;
       height: $input-md-height;
       line-height: $input-md-line-height;
@@ -39,15 +37,13 @@
       padding-left: $input-md-padding-left;
       padding-right: $input-md-padding-right;
       padding-top: $input-md-padding-top;
+
+      & ~ .input__button {
+        bottom: 1px;
+      }
     }
 
-    .input__button {
-      bottom: 1px;
-    }
-  }
-
-  &--size-lg {
-    .input__control {
+    &--size-lg {
       font-size: $input-lg-font-size;
       height: $input-lg-height;
       line-height: $input-lg-line-height;
@@ -56,42 +52,41 @@
       padding-left: $input-lg-padding-left;
       padding-right: $input-lg-padding-right;
       padding-top: $input-lg-padding-top;
+
+      & ~ .input__button {
+        bottom: 4px;
+      }
     }
 
-    .input__button {
-      bottom: 4px;
-    }
-  }
-
-  &--hover {
-    .input__control {
+    &--hover {
       border-color: $input-hover-border-color;
     }
-  }
 
-  &--focus {
-    .input__control {
+    &--focus {
       border-color: $input-focus-border-color;
-    }
 
-    .input__button.button--icon-arrow-down {
-      display: block;
-    }
-
-    &.input--opened {
-      .input__button.button--icon-arrow-down {
-        display: none;
+      & ~ .input__button.button--icon-arrow-down {
+        display: block;
       }
 
-      .input__button.button--icon-arrow-up {
+      &.input__control--opened {
+        & ~ .input__button.button--icon-arrow-down {
+          display: none;
+        }
+
+        & ~ .input__button.button--icon-arrow-up {
+          display: block;
+        }
+      }
+    }
+
+    &--filled {
+      & ~ .input__button.button--icon-close {
         display: block;
       }
     }
-  }
 
-  &--filled {
-    .input__button.button--icon-close {
-      display: block;
-    }
+    @mixin outline;
+    @mixin disabled;
   }
 }
