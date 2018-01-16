@@ -34,10 +34,10 @@ $slot-border-radius: 2px;
 
 $slot-primary-bg-color: #FFFFFF;
 $slot-primary-hover-bg-color: #1D54FE;
-$slot-primary-pressed-bg-color: #1D00FE;
+$slot-primary-active-bg-color: #1D00FE;
 $slot-secondary-bg-color: #D5DFE9;
 $slot-secondary-hover-bg-color: #98A9B9;
-$slot-secondary-pressed-bg-color: #8594A2;
+$slot-secondary-active-bg-color: #8594A2;
 
 // Button
 $button-bg-color: #E9ECEF;
@@ -53,10 +53,10 @@ $button-padding-y: 10px;
 $button-primary-color: #FFFFFF;
 $button-primary-bg-color: #007DFF;
 $button-primary-hover-bg-color: #0059FF;
-$button-primary-pressed-bg-color: #0217FE;
+$button-primary-active-bg-color: #0217FE;
 $button-primary-disabled-bg-color: #E9ECEF;
 $button-secondary-color: $button-color;
 $button-secondary-bg-color: #E9ECEF;
 $button-secondary-hover-bg-color: #DDE0E4;
-$button-secondary-pressed-bg-color: #C8CDD3;
+$button-secondary-active-bg-color: #C8CDD3;
 $button-secondary-disabled-bg-color: #E2E5E8;

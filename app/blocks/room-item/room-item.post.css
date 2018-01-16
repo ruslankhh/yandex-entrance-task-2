@@ -23,7 +23,7 @@
     }
   }
 
-  &--pressed {
+  &--active {
     .room-item__title {
       font-family: $font-family-bold;
       color: #1D54FE;

@@ -6,6 +6,7 @@
   color: $button-color;
   padding: $button-padding-y $button-padding-x;
   position: relative;
+  text-align: center;
 
   &__text {
     font-size: $button-font-size;
@@ -24,8 +25,8 @@
       background-color: $button-primary-hover-bg-color;
     }
 
-    &.button--pressed {
-      background-color: $button-primary-pressed-bg-color;
+    &.button--active {
+      background-color: $button-primary-active-bg-color;
     }
 
     &.button--disabled {
@@ -45,8 +46,8 @@
       background-color: $button-secondary-hover-bg-color;
     }
 
-    &.button--pressed {
-      background-color: $button-secondary-pressed-bg-color;
+    &.button--active {
+      background-color: $button-secondary-active-bg-color;
     }
 
     &.button--disabled {
@@ -96,7 +97,7 @@
       width: 100%;
     }
 
-    &.button--focused {
+    &.button--focus {
       .button__text {
         opacity: 1;
       }

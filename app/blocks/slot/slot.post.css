@@ -11,13 +11,10 @@
   }
 
   &--type-primary {
-    &,
-    &.slot--normal {
-      background-color: $slot-primary-bg-color;
-    }
+    background-color: $slot-primary-bg-color;
 
     &.slot--hover,
-    &.slot--pressed {
+    &.slot--active {
       border-radius: $slot-border-radius;
 
       .slot__text {
@@ -29,24 +26,21 @@
       background-color: $slot-primary-hover-bg-color;
     }
 
-    &.slot--pressed {
-      background-color: $slot-primary-pressed-bg-color;
+    &.slot--active {
+      background-color: $slot-primary-active-bg-color;
     }
   }
 
   &--type-secondary {
-    &,
-    &.slot--normal {
-      background-color: $slot-secondary-bg-color;
-      border-radius: 0;
-    }
+    background-color: $slot-secondary-bg-color;
+    border-radius: 0;
 
     &.slot--hover {
       background-color: $slot-secondary-hover-bg-color;
     }
 
-    &.slot--pressed {
-      background-color: $slot-secondary-pressed-bg-color;
+    &.slot--active {
+      background-color: $slot-secondary-active-bg-color;
     }
   }
 }
