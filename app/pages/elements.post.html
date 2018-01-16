@@ -35,8 +35,6 @@
               <div elem="item-title">Hover</div>
               <mixin name="user-item" mods="hover" username="Лекс Лютер" userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg" />
             </div>
-            <div elem="item" mods="col:4"></div>
-            <div elem="item" mods="col:4"></div>
           </div>
         </div>
       </div>
@@ -45,14 +43,12 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="button" mods="icon:edit circle" />
+              <mixin name="button" mods="icon:edit size:xs circle" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Focused</div>
-              <mixin name="button" mods="icon:edit circle focus" />
+              <mixin name="button" mods="icon:edit size:xs circle focus" />
             </div>
-            <div elem="item" mods="col:4"></div>
-            <div elem="item" mods="col:4"></div>
           </div>
         </div>
       </div>
@@ -72,7 +68,6 @@
               <div elem="item-title">Pressed</div>
               <mixin name="slot" mods="type:primary active" />
             </div>
-            <div elem="item" mods="col:4"></div>
           </div>
         </div>
       </div>
@@ -92,7 +87,6 @@
               <div elem="item-title">Pressed</div>
               <mixin name="slot" mods="type:secondary active" />
             </div>
-            <div elem="item" mods="col:4"></div>
           </div>
         </div>
       </div>
@@ -101,19 +95,49 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="button" mods="type:primary" text="Создать встречу" />
+              <mixin name="button" mods="type:primary size:md" text="Создать встречу" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Hover</div>
-              <mixin name="button" mods="type:primary hover" text="Создать встречу" />
+              <mixin name="button" mods="type:primary size:md hover" text="Создать встречу" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Pressed</div>
-              <mixin name="button" mods="type:primary active" text="Создать встречу" />
+              <mixin name="button" mods="type:primary size:md active" text="Создать встречу" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Disabled</div>
-              <mixin name="button" mods="type:primary disabled" text="Создать встречу" />
+              <mixin name="button" mods="type:primary size:md disabled" text="Создать встречу" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div block="container" mods="id:7 width:full">
+        <div elem="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:2">
+              <div elem="item-title">Normal</div>
+              <mixin name="input" mods="size:md" id="users-1" label="Участники" placeholder="О чём будете говорить?" />
+            </div>
+            <div elem="item" mods="col:2">
+              <div elem="item-title">Pressed</div>
+              <mixin name="input" mods="size:md focus"  id="users-2" label="Участники" value="To" />
+            </div>
+          </div>
+        </div>
+        <div elem="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:2">
+              <div elem="item-title">Hover</div>
+              <mixin name="input" mods="size:md hover" id="users-3" label="Участники" />
+            </div>
+          </div>
+        </div>
+        <div elem="row">
+          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:2">
+              <div elem="item-title">Filled</div>
+              <mixin name="input" mods="size:lg filled" id="users-4" label="Участники" value="Дарт Вейдер" />
             </div>
           </div>
         </div>
@@ -123,19 +147,19 @@
           <div block="grid" mods="padding-right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
-              <mixin name="button" mods="type:secondary" text="Отмена" />
+              <mixin name="button" mods="type:secondary size:md" text="Отмена" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Hover</div>
-              <mixin name="button" mods="type:secondary hover" text="Отмена" />
+              <mixin name="button" mods="type:secondary size:md hover" text="Отмена" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Pressed</div>
-              <mixin name="button" mods="type:secondary active" text="Отмена" />
+              <mixin name="button" mods="type:secondary size:md active" text="Отмена" />
             </div>
             <div elem="item" mods="col:4">
               <div elem="item-title">Disabled</div>
-              <mixin name="button" mods="type:secondary disabled" text="Отмена" />
+              <mixin name="button" mods="type:secondary size:md disabled" text="Отмена" />
             </div>
           </div>
         </div>

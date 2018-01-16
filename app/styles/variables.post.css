@@ -11,7 +11,7 @@ $content-width: 1000px;
 
 $container-padding-x: 12px;
 $container-padding-top: 10px;
-$container-padding-bottom: 18px;
+$container-padding-bottom: 14px;
 $container-width: calc($content-width + 2 * $container-padding-x);
 $container-bg-color: #FFFFFF;
 $container-bg-color-light: #E9ECEF;
@@ -20,10 +20,13 @@ $container-title-color: #C7C7C7;
 
 $row-width: $content-width;
 
+$grid-padding-top: 10px;
+$grid-padding-bottom: 14px;
 $grid-padding-x: 20px;
-$grid-padding-y: 10px;
 
 // Images
+$image-arrow-down-url: "../images/arrow3.svg";
+$image-arrow-up-url: "../images/arrow4.svg";
 $image-close-url: "../images/close.svg";
 $image-close-hover-url: "../images/close-hover.svg";
 $image-edit-url: "../images/edit.svg";
@@ -35,6 +38,7 @@ $slot-border-radius: 2px;
 $slot-primary-bg-color: #FFFFFF;
 $slot-primary-hover-bg-color: #1D54FE;
 $slot-primary-active-bg-color: #1D00FE;
+
 $slot-secondary-bg-color: #D5DFE9;
 $slot-secondary-hover-bg-color: #98A9B9;
 $slot-secondary-active-bg-color: #8594A2;
@@ -44,19 +48,65 @@ $button-bg-color: #E9ECEF;
 $button-border-radius: 4px;
 $button-color: #000000;
 $button-disabled-color: rgba(0, 0, 0, 0.2);
-$button-font-size: 13px;
 $button-font-family: $font-family-medium;
-$button-line-height: 16px;
-$button-padding-x: 16px;
-$button-padding-y: 10px;
+
+$button-xs-font-size: 9px;
+$button-xs-line-height: 10px;
+$button-xs-height: 24px;
+$button-xs-padding-top: 4px;
+$button-xs-padding-bottom: 4px;
+$button-xs-padding-x: 10px;
+
+$button-sm-font-size: 13px;
+$button-sm-line-height: 16px;
+$button-sm-height: 36px;
+$button-sm-padding-top: 10px;
+$button-sm-padding-bottom: 10px;
+$button-sm-padding-x: 16px;
+
+$button-md-font-size: 13px;
+$button-md-line-height: 16px;
+$button-md-height: 36px;
+$button-md-padding-top: 10px;
+$button-md-padding-bottom: 10px;
+$button-md-padding-x: 16px;
 
 $button-primary-color: #FFFFFF;
 $button-primary-bg-color: #007DFF;
 $button-primary-hover-bg-color: #0059FF;
 $button-primary-active-bg-color: #0217FE;
 $button-primary-disabled-bg-color: #E9ECEF;
+
 $button-secondary-color: $button-color;
 $button-secondary-bg-color: #E9ECEF;
 $button-secondary-hover-bg-color: #DDE0E4;
 $button-secondary-active-bg-color: #C8CDD3;
 $button-secondary-disabled-bg-color: #E2E5E8;
+
+// Input
+$input-label-font-size: 13px;
+$input-label-font-family: $font-family-bold;
+
+$input-border-color: #E9ECEF;
+$input-border-radius: 4px;
+$input-border-width: 2px;
+$input-placeholder-color: #858E98;
+
+$input-md-font-size: 13px;
+$input-md-line-height: 15px;
+$input-md-letter-spacing: 0.47px;
+$input-md-height: 38px;
+$input-md-padding-top: 11px;
+$input-md-padding-bottom: 12px;
+$input-md-padding-x: 8px;
+
+$input-lg-font-size: 15px;
+$input-lg-line-height: 17px;
+$input-lg-letter-spacing: 0.55px;
+$input-lg-height: 44px;
+$input-lg-padding-top: 13px;
+$input-lg-padding-bottom: 14px;
+$input-lg-padding-x: 10px;
+
+$input-hover-border-color: #007DFF;
+$input-focus-border-color: #007DFF;

@@ -7,7 +7,7 @@
       padding-left: 80px;
 
       &--id-1 {
-        padding-bottom: 13px;
+        padding-bottom: 9px;
 
         .grid__item-title {
           padding-bottom: 11px;
@@ -15,7 +15,41 @@
       }
 
       &--id-3 {
-        padding-bottom: 15px;
+        padding-bottom: 11px;
+      }
+
+      &--id-6 {
+        .button {
+          min-width: 140px;
+        }
+      }
+
+      &--id-7 {
+        padding-top: 11px;
+
+        .grid__item {
+          padding-right: 100px;
+        }
+
+        .grid__item-title {
+          padding-bottom: 17px;
+        }
+
+        .container__row:nth-child(1) {
+          .grid__item {
+            padding-bottom: 12px;
+          }
+        }
+
+        .container__row:nth-child(3) {
+          .grid__item {
+            padding-right: 192px;
+          }
+
+          .grid__item-title {
+            padding-bottom: 10px;
+          }
+        }
       }
     }
   }
