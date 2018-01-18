@@ -20,6 +20,11 @@
       background-color: $button-primary-hover-bg-color;
     }
 
+    &:focus,
+    &.button--focus {
+      background-color: $button-primary-focus-bg-color;
+    }
+
     &:active,
     &.button--active {
       background-color: $button-primary-active-bg-color;
@@ -42,6 +47,11 @@
     &:hover,
     &.button--hover {
       background-color: $button-secondary-hover-bg-color;
+    }
+
+    &:focus,
+    &.button--focus {
+      background-color: $button-secondary-focus-bg-color;
     }
 
     &:active,
@@ -119,61 +129,24 @@
     }
   }
 
-  &--icon-close {
-    padding: 0;
-
-    .button__text {
-      background-image: url($image-close-url);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100%;
-      width: 100%;
-    }
-
-    &.button--size-xs {
-      .button__text {
-        background-size: 45%;
-      }
-    }
-
-    &.button--size-md {
-      .button__text {
-        background-size: 40%;
-      }
-    }
-
-    &:hover,
-    &.button--hover {
-      .button__text {
-        background-image: url($image-close-hover-url);
-      }
-    }
-  }
-
+  &--icon-arrow-left,
+  &--icon-arrow-right,
+  &--icon-arrow-down,
+  &--icon-arrow-up,
+  &--icon-close,
   &--icon-edit {
     padding: 0;
 
     .button__text {
-      background-image: url($image-edit-url);
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
       height: 100%;
-      opacity: 0.43;
       width: 100%;
+      opacity: 0.43;
     }
 
-    &.button--size-xs {
-      .button__text {
-        background-size: 50%;
-      }
-    }
-
-    &.button--size-md {
-      .button__text {
-        background-size: 40%;
-      }
-    }
-
+    &:hover,
+    &.button--hover,
     &:focus,
     &.button--focus {
       .button__text {
@@ -182,34 +155,15 @@
     }
   }
 
-  &--icon-arrow-down,
-  &--icon-arrow-up {
-    padding: 0;
-
+  &--icon-arrow-left {
     .button__text {
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100%;
-      width: 100%;
+      background-image: url($image-arrow-left-url);
     }
+  }
 
-    &.button--size-xs {
-      .button__text {
-        background-size: 50%;
-      }
-    }
-
-    &.button--size-md {
-      .button__text {
-        background-size: 40%;
-      }
-    }
-
-    &:focus,
-    &.button--focus {
-      .button__text {
-        opacity: 1;
-      }
+  &--icon-arrow-right {
+    .button__text {
+      background-image: url($image-arrow-right-url);
     }
   }
 
@@ -222,6 +176,18 @@
   &--icon-arrow-up {
     .button__text {
       background-image: url($image-arrow-up-url);
+    }
+  }
+
+  &--icon-close {
+    .button__text {
+      background-image: url($image-close-url);
+    }
+  }
+
+  &--icon-edit {
+    .button__text {
+      background-image: url($image-edit-url);
     }
   }
 

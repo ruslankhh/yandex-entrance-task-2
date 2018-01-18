@@ -1,0 +1,6 @@
+.page {
+  &--index {
+    // TODO: Remove it.
+    padding-top: 4px;
+  }
+}

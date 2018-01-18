@@ -2,49 +2,25 @@
   padding: 4px 0;
 
   &__title {
-    font-family: $font-family-medium;
-    font-size: 15px;
-    line-height: 17px;
+    font-family: $room-item-title-font-family;
+    font-size: $room-item-title-font-size;
+    line-height: $room-item-title-line-height;
   }
 
   &__text {
-    font-size: 13px;
-    line-height: 17px;
-    height: 17px;
+    font-size: $room-item-text-font-size;
+    line-height: $room-item-text-line-height;
     margin-top: 2px;
-  }
-
-  &:hover,
-  &--hover {
-    .room-item__title {
-      font-family: $font-family-bold;
-      color: #0070E0;
-    }
-  }
-
-  &:active,
-  &--active {
-    .room-item__title {
-      font-family: $font-family-bold;
-      color: #1D54FE;
-    }
   }
 
   &:disabled,
   &--disabled {
-    .room-item__title {
-      font-family: $font-family-medium;
-      color: #858E98;
-      -webkit-font-smoothing: antialiased;
-    }
-
     .room-item__text {
-      color: #858E98;
+      color: $room-item-text-disabled-color;
       -webkit-font-smoothing: antialiased;
     }
   }
 
-  @mixin cursor;
   @mixin outline;
   @mixin disabled;
 }

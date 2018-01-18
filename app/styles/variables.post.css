@@ -6,6 +6,15 @@ $font-family-bold: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 
 $font-family: $font-family-regular;
 
+// Header
+$header-shadow-color: #E9ECEF;
+$header-shadow-width: 1px;
+
+$header-padding-top: 18px;
+$header-padding-left: 24px;
+$header-padding-right: 24px;
+$header-padding-bottom: 17px;
+
 // Grid
 $content-width: 1000px;
 
@@ -24,14 +33,22 @@ $grid-padding-top: 10px;
 $grid-padding-bottom: 14px;
 $grid-padding-x: 20px;
 
+// Link
+$link-color: inherit;
+$link-hover-color: #0070E0;
+$link-focus-color: #0070E0;
+$link-active-color: #1D54FE;
+$link-disabled-color: #858E98;
+
 // Outline
 $outline: none;
 
 // Images
-$image-arrow-down-url: "../images/arrow3.svg";
-$image-arrow-up-url: "../images/arrow4.svg";
+$image-arrow-left-url: "../images/arrow-left.svg";
+$image-arrow-right-url: "../images/arrow-right.svg";
+$image-arrow-down-url: "../images/arrow-down.svg";
+$image-arrow-up-url: "../images/arrow-up.svg";
 $image-close-url: "../images/close.svg";
-$image-close-hover-url: "../images/close-hover.svg";
 $image-edit-url: "../images/edit.svg";
 
 // Slot
@@ -40,10 +57,12 @@ $slot-border-radius: 2px;
 
 $slot-primary-bg-color: #FFFFFF;
 $slot-primary-hover-bg-color: #1D54FE;
+$slot-primary-focus-bg-color: #1D54FE;
 $slot-primary-active-bg-color: #1D00FE;
 
 $slot-secondary-bg-color: #D5DFE9;
 $slot-secondary-hover-bg-color: #98A9B9;
+$slot-secondary-focus-bg-color: #98A9B9;
 $slot-secondary-active-bg-color: #8594A2;
 
 // Button
@@ -77,12 +96,14 @@ $button-md-padding-x: 16px;
 $button-primary-color: #FFFFFF;
 $button-primary-bg-color: #007DFF;
 $button-primary-hover-bg-color: #0059FF;
+$button-primary-focus-bg-color: #0059FF;
 $button-primary-active-bg-color: #0217FE;
 $button-primary-disabled-bg-color: #E9ECEF;
 
 $button-secondary-color: $button-color;
 $button-secondary-bg-color: #E9ECEF;
 $button-secondary-hover-bg-color: #DDE0E4;
+$button-secondary-focus-bg-color: #DDE0E4;
 $button-secondary-active-bg-color: #C8CDD3;
 $button-secondary-disabled-bg-color: #E2E5E8;
 
@@ -115,3 +136,15 @@ $input-lg-padding-right: calc($input-lg-height - 2 * $input-border-width);
 
 $input-hover-border-color: #007DFF;
 $input-focus-border-color: #007DFF;
+
+// Datapicker
+$datapicker-font-family: $font-family-medium;
+$datapicker-font-size: 15px;
+
+// Room-item
+$room-item-title-font-family: $font-family-medium;
+$room-item-title-font-size: 15px;
+$room-item-title-line-height: 17px;
+$room-item-text-font-size: 13px;
+$room-item-text-line-height: 17px;
+$room-item-text-disabled-color: #858E98;

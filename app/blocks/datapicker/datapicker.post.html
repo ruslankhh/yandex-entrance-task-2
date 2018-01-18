@@ -1,0 +1,7 @@
+<define-mixin name="datapicker" mods mix text=>
+  <div block="datapicker" mods="{{ mods }}" mix="{{ mix }}">
+    <mixin name="button" mods="icon:arrow-left size:xs circle" mix="block:datapicker elem:button-left"></mixin>
+    <mixin name="link" mix="block:datapicker elem:link"><content></content></mixin>
+    <mixin name="button" mods="icon:arrow-right size:xs circle" mix="block:datapicker elem:button-right"></mixin>
+  </div>
+</define-mixin>

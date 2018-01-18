@@ -1,6 +1,6 @@
 <define-mixin name="room-item" mods mix title text>
   <div block="room-item" mods="{{ mods }}" mix="{{ mix }}">
-    <div elem="title">{{ title }}</div>
+    <mixin name="link" mods="{{ mods }}" mix="block:room-item elem:title">{{ title }}</mixin>
     <div elem="text">{{ text }}</div>
     <content></content>
   </div>

@@ -2,7 +2,7 @@
   <div block="user-item" mods="{{ mods }}" mix="{{ mix }}">
     <div elem="image" style="background-image: url({{ userimage }})"></div>
     <div elem="name">{{ username }}</div>
-    <mixin name="button" mods="icon:close size:xs circle transparent" mix="block:user-item elem:button"/>
+    <mixin name="button" mods="icon:close size:xs circle transparent {{ mods }}" mix="block:user-item elem:button"/>
     <content></content>
   </div>
 </define-mixin>
