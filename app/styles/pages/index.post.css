@@ -10,28 +10,33 @@
       display: flex;
 
       &__sidebar {
-        box-shadow: $header-shadow-width 0 0 0 $header-shadow-color;
-        width: 245px;
-        min-height: calc(100vh - $page-index-header-height - $page-index-padding-top);
         display: flex;
         flex-direction: column;
+        justify-content:space-between;
+        min-height: calc(100vh - $page-index-header-height - $page-index-padding-top);
+        width: 245px;
 
         &-header {
           background-color: #fff;
           box-shadow: inset 0 -$header-shadow-width 0 0 $header-shadow-color;
+          min-height: 46px;
           height: 46px;
           padding: 10px 24px;
         }
 
         &-body {
+          box-shadow: $header-shadow-width 0 0 0 $header-shadow-color;
           padding: 22px 25px;
+          height: 100%;
         }
       }
 
       &__main {
+        background-color: #F6F7F9;
         width: calc(100% - 245px);
         overflow: hidden;
         min-height: calc(100vh - $page-index-header-height - $page-index-padding-top);
+        z-index: -1;
 
         &-header {
           background-color: #fff;
