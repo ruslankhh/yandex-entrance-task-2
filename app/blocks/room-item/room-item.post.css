@@ -1,6 +1,4 @@
 .room-item {
-  padding: 4px 0;
-
   &__title {
     font-family: $room-item-title-font-family;
     font-size: $room-item-title-font-size;

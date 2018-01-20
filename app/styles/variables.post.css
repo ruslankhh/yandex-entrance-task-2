@@ -141,6 +141,16 @@ $input-focus-border-color: #007DFF;
 $datapicker-font-family: $font-family-medium;
 $datapicker-font-size: 15px;
 
+// Rooms-list
+$rooms-list-title-font-family: $font-family-bold;
+$rooms-list-title-font-size: 11px;
+$rooms-list-title-color: #858E98;
+$rooms-list-title-letter-spacing: 0.4px;
+$rooms-list-title-padding-bottom: 8px;
+$rooms-list-body-padding-bottom: 9px;
+$rooms-list-item-padding-top: 0;
+$rooms-list-item-padding-bottom: 15px;
+
 // Room-item
 $room-item-title-font-family: $font-family-medium;
 $room-item-title-font-size: 15px;

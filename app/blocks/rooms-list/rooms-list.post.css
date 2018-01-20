@@ -1,3 +1,20 @@
 .rooms-list {
+  &__title {
+    font-family: $rooms-list-title-font-family;
+    font-size: $rooms-list-title-font-size;
+    color: $rooms-list-title-color;
+    letter-spacing: $rooms-list-title-letter-spacing;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: $rooms-list-title-padding-bottom;
+  }
 
+  &__body {
+    padding-bottom: $rooms-list-body-padding-bottom;
+  }
+
+  &__item {
+    padding-top: $rooms-list-item-padding-top;
+    padding-bottom: $rooms-list-item-padding-bottom;
+  }
 }

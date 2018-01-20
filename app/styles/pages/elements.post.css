@@ -12,6 +12,10 @@
         .grid__item-title {
           padding-bottom: 10px;
         }
+
+        .room-item {
+          padding: 4px 0;
+        }
       }
 
       &--id-3 {
