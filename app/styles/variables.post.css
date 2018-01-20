@@ -9,7 +9,6 @@ $font-family: $font-family-regular;
 // Header
 $header-shadow-color: #E9ECEF;
 $header-shadow-width: 1px;
-
 $header-padding-top: 18px;
 $header-padding-left: 24px;
 $header-padding-right: 24px;
@@ -158,3 +157,17 @@ $room-item-title-line-height: 17px;
 $room-item-text-font-size: 13px;
 $room-item-text-line-height: 17px;
 $room-item-text-disabled-color: #858E98;
+
+// Timeline
+$timeline-item-color: #252525;
+$timeline-item-disabled-color: #858E98;
+$timeline-item-font-family: $font-family-bold;
+$timeline-item-font-size: 11px;
+$timeline-item-letter-spacing: 0.4px;
+$timeline-item-line-height: 20px;
+$timeline-item-height: 20px;
+$timeline-item-width: 49px;
+
+// Pages
+$page-index-padding-top: 4px;
+$page-index-header-height: 71px;

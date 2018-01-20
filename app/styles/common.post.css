@@ -4,14 +4,14 @@ body {
   &, * {
     box-sizing: border-box;
   }
+}
 
-  .header {
-    box-shadow: inset 0 -$header-shadow-width 0 0 $header-shadow-color;
-    display: flex;
-    padding-top: $header-padding-top;
-    padding-left: $header-padding-left;
-    padding-right: $header-padding-right;
-    padding-bottom: $header-padding-bottom;
-    justify-content: space-between;
-  }
+.header {
+  box-shadow: inset 0 -$header-shadow-width 0 0 $header-shadow-color;
+  display: flex;
+  padding-top: $header-padding-top;
+  padding-left: $header-padding-left;
+  padding-right: $header-padding-right;
+  padding-bottom: $header-padding-bottom;
+  justify-content: space-between;
 }
