@@ -1,8 +1,18 @@
-<define-mixin name="slot" mods mix time>
+<define-mixin name="slot" mods mix time title data room username userimage usercontent>
   <div block="slot" mods="{{ mods }}" mix="{{ mix }}" style="width: calc(100% * (66 / 1035) * ({{ time }}) / 60);">
-    <mixin name="button" mix="block:slot elem:button">
+    <mixin name="button" mods="{{ mods }}" mix="block:slot elem:button">
       <div class="slot__text">+</div>
     </mixin>
+    <mixin
+      name="tooltip"
+      mix="block:slot elem:tooltip"
+      title="{{ title }}"
+      data="{{ data }}"
+      room="{{ room }}"
+      username="{{ username }}"
+      userimage="{{ userimage }}"
+      usercontent="{{ usercontent }}"
+    ></mixin>
     <content></content>
   </div>
 </define-mixin>

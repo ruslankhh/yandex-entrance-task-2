@@ -2,13 +2,13 @@
   display: inline-block;
   background-color: #E9ECEF;
   border-radius: 16px;
+  line-height: 22px;
   min-height: 24px;
   min-width: 142px;
-  padding: 4px 32px 3px 32px;
+  padding: 0 32px 0 32px;
   position: relative;
 
   &__image {
-    background-color: #E9ECEF;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,15 +20,33 @@
     width: 24px;
   }
 
-  &__name {
+  &__name,
+  &__content {
+    display: inline-block;
     font-size: 13px;
     line-height: 17px;
+  }
+
+  &__content {
+    color: #858E98;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
   }
 
   &__button {
     position: absolute;
     top: 0;
     right: 4px;
+  }
+
+  &--button-false {
+    .user-item__button {
+      display: none;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
   }
 
   @mixin outline;

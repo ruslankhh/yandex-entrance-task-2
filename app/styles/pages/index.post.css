@@ -28,7 +28,6 @@
           position: relative;
           padding: 22px 0 22px 25px;
           height: 100%;
-          z-index: 1;
 
           &::after {
             box-shadow: $header-shadow-width 0 0 0 $header-shadow-color;
@@ -54,7 +53,7 @@
           height: 46px;
           margin-left: calc(100% * -34 / 1035);
           margin-right: calc(100% * -53 / 1035);
-          z-index: 1;
+          z-index: 10;
         }
 
         &-body {
