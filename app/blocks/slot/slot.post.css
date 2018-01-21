@@ -2,9 +2,27 @@
   height: $slot-height;
   position: relative;
 
+  &__button {
+    background-color: transparent;
+    border-radius: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      background-color: $slot-primary-hover-bg-color;
+    }
+
+    &:active {
+      background-color: $slot-primary-active-bg-color;
+    }
+  }
+
   &__text {
     color: $slot-color;
-    display: none;
     font-family: $font-family-light;
     font-size: 22px;
     text-align: center;
@@ -17,41 +35,60 @@
   &--type-primary {
     background-color: $slot-primary-bg-color;
 
-    &:hover,
-    &:active,
-    &.slot--hover,
-    &.slot--active {
+    .slot__button {
       border-radius: $slot-border-radius;
-
-      .slot__text {
-        display: block;
-      }
     }
 
     &:hover,
     &.slot--hover {
-      background-color: $slot-primary-hover-bg-color;
       z-index: 10;
+
+      .slot__button {
+        background-color: $slot-primary-hover-bg-color;
+        display: block;
+      }
     }
 
     &:active,
     &.slot--active {
-      background-color: $slot-primary-active-bg-color;
+      z-index: 10;
+
+      .slot__button {
+        background-color: $slot-primary-active-bg-color;
+        display: block;
+      }
     }
   }
 
   &--type-secondary {
     background-color: $slot-secondary-bg-color;
-    border-radius: 0;
+
+    .slot__button {
+      border-radius: 0;
+    }
+
+    .slot__text {
+      display: none;
+    }
 
     &:hover,
     &.slot--hover {
-      background-color: $slot-secondary-hover-bg-color;
+      z-index: 10;
+
+      .slot__button {
+        background-color: $slot-secondary-hover-bg-color;
+        display: block;
+      }
     }
 
     &:active,
     &.slot--active {
-      background-color: $slot-secondary-active-bg-color;
+      z-index: 10;
+
+      .slot__button {
+        background-color: $slot-secondary-active-bg-color;
+        display: block;
+      }
     }
   }
 
