@@ -14,6 +14,7 @@
           <div elem="sidebar-body">
             <mixin name="rooms-list" title="7 этаж">
               <mixin name="room-item" mods="tail:true disabled" mix="block:rooms-list elem:item" title="Ржавый Фред" text="3—6 человек">
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
@@ -29,16 +30,30 @@
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
-                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
-                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Прачечная" text="до 10 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 + 6"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="8 * 60 + 54"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Жёлтый дом" text="до 10 человек">
-
+                  <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                  <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 8"></mixin>
+                  <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 8"></mixin>
+                  <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                  <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 11.5"></mixin>
+                  <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 11.5"></mixin>
+                  <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="2 * 60"></mixin>
+                  <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="6 * 60"></mixin>
+                  <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true disabled" mix="block:rooms-list elem:item" title="Оранжевый тюльпан" text="до 10 человек">
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
@@ -54,25 +69,86 @@
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
                 <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
-                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
-                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
             </mixin>
             <mixin name="rooms-list" title="6 этаж">
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Джокер" text="3—6 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 6"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="39"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="20 + 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="8 + 15"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="2 * 60 - 14.5 - 13"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="14.5"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 5.5"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 5.5 - 16 + 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 5 - 6"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="2 * 60 + 53 + 13 + 6"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Мариванна" text="3—6 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="5 * 60 + 5"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 20"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 19"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 5"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 - 6"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60 - 5"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="4 * 60 + 18"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Тонкий Боб" text="3—6 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="4 * 60 + 20"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="40"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="33"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 2"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="25"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="19"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 23"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="18"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="2 + 42"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 16"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Чёрная вдова" text="3—6 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 44"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="16"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="17"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="16"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="27"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="60"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="22"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 31"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="18"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="60 + 31"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="18"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="36"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 24"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
               <mixin name="room-item" mods="tail:true" mix="block:rooms-list elem:item" title="Белорусский ликёр" text="3—6 человек">
-
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="3 * 60 + 34.5"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="25.5"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="45"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="4 * 60 + 8"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="18"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="18"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="14"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="22.5"></mixin>
+                <mixin name="slot" mods="type:primary" mix="block:room-item elem:slot" time="27"></mixin>
+                <mixin name="slot" mods="type:secondary" mix="block:room-item elem:slot" time="4 * 60 + 27.5"></mixin>
+                <mixin name="slot" mods="type:secondary disabled" mix="block:room-item elem:slot"></mixin>
               </mixin>
             </mixin>
           </div>

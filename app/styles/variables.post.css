@@ -164,6 +164,7 @@ $room-item-title-line-height: 17px;
 $room-item-text-font-size: 13px;
 $room-item-text-line-height: 17px;
 $room-item-text-disabled-color: #858E98;
+$room-item-tail-bg-color: $slot-secondary-bg-color;
 
 // Timeline
 $timeline-item-color: #252525;

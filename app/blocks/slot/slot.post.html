@@ -1,5 +1,5 @@
-<define-mixin name="slot" mods mix width>
-  <div block="slot" mods="{{ mods }}" mix="{{ mix }}" style="width: {{ width }}">
+<define-mixin name="slot" mods mix time>
+  <div block="slot" mods="{{ mods }}" mix="{{ mix }}" style="width: calc(100% * (66 / 1035) * ({{ time }}) / 60);">
     <div elem="text">+</div>
     <content></content>
   </div>

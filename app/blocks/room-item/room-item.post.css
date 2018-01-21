@@ -21,7 +21,7 @@
   }
 
   &__tail {
-    background-color: #fff;
+    background-color: $room-item-tail-bg-color;
     display: none;
     position: absolute;
     left: 100%;
@@ -31,14 +31,14 @@
   }
 
   &__slot {
-    width: 6.371014%; // 65.94px / 1035px
+    width: calc(100% * 66 / 1035);
 
     &:first-child {
-      width: 2.989372%; // (65.94px - 33px - 2px) / 1035px = 30.94px / 1035px
+      width: calc(100% * (66 - 34) / 1035);
     }
 
     &:last-child {
-      width: 1.443478%; // (65.94px - 53px + 2px) / 1035px = 14.94px / 1035px
+      width: calc(100% * (66 - 53) / 1035);
     }
   }
 

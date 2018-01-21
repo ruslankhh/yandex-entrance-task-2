@@ -1,5 +1,6 @@
 .slot {
   height: $slot-height;
+  position: relative;
 
   &__text {
     color: $slot-color;
@@ -7,6 +8,10 @@
     font-family: $font-family-light;
     font-size: 22px;
     text-align: center;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &--type-primary {
