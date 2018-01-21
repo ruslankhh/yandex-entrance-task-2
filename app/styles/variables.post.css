@@ -53,6 +53,7 @@ $image-edit-url: "../images/edit.svg";
 // Slot
 $slot-color: #FFFFFF;
 $slot-border-radius: 2px;
+$slot-height: 28px;
 
 $slot-primary-bg-color: #FFFFFF;
 $slot-primary-hover-bg-color: #1D54FE;
@@ -145,12 +146,18 @@ $rooms-list-title-font-family: $font-family-bold;
 $rooms-list-title-font-size: 11px;
 $rooms-list-title-color: #858E98;
 $rooms-list-title-letter-spacing: 0.4px;
-$rooms-list-title-padding-bottom: 8px;
-$rooms-list-body-padding-bottom: 9px;
-$rooms-list-item-padding-top: 0;
-$rooms-list-item-padding-bottom: 15px;
+$rooms-list-title-padding-bottom: 5px;
+$rooms-list-body-padding-bottom: 12px;
+$rooms-list-item-margin-bottom: 8px;
 
 // Room-item
+$room-item-body-padding-top: 4px;
+$room-item-body-padding-bottom: 4px;
+$room-item-title-color: $link-color;
+$room-item-title-hover-color: $link-hover-color;
+$room-item-title-active-color: $link-active-color;
+$room-item-title-focus-color: $link-focus-color;
+$room-item-title-disabled-color: $link-disabled-color;
 $room-item-title-font-family: $font-family-medium;
 $room-item-title-font-size: 15px;
 $room-item-title-line-height: 17px;
@@ -164,9 +171,12 @@ $timeline-item-disabled-color: #858E98;
 $timeline-item-font-family: $font-family-bold;
 $timeline-item-font-size: 11px;
 $timeline-item-letter-spacing: 0.4px;
-$timeline-item-line-height: 20px;
-$timeline-item-height: 20px;
-$timeline-item-width: 49px;
+$timeline-item-line-height: 46px;
+$timeline-item-height: 100%;
+$timeline-item-width: 5.882353%;
+$timeline-item-text-line-height: 20px;
+$timeline-item-text-height: 20px;
+$timeline-item-text-width: 50px;
 
 // Pages
 $page-index-padding-top: 4px;

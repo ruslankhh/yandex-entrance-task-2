@@ -1,6 +1,5 @@
 .slot {
-  height: 28px;
-  width: 57px;
+  height: $slot-height;
 
   &__text {
     color: $slot-color;
@@ -27,6 +26,7 @@
     &:hover,
     &.slot--hover {
       background-color: $slot-primary-hover-bg-color;
+      z-index: 10;
     }
 
     &:active,

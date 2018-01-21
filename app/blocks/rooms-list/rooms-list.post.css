@@ -14,7 +14,6 @@
   }
 
   &__item {
-    padding-top: $rooms-list-item-padding-top;
-    padding-bottom: $rooms-list-item-padding-bottom;
+    margin-bottom: $rooms-list-item-margin-bottom;
   }
 }

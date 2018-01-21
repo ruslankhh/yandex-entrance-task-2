@@ -1,7 +1,11 @@
 <define-mixin name="room-item" mods mix title text>
   <div block="room-item" mods="{{ mods }}" mix="{{ mix }}">
-    <mixin name="link" mods="{{ mods }}" mix="block:room-item elem:title">{{ title }}</mixin>
-    <div elem="text">{{ text }}</div>
-    <content></content>
+    <div elem="body">
+      <div elem="title">{{ title }}</div>
+      <div elem="text">{{ text }}</div>
+    </div>
+    <div elem="tail">
+      <content></content>
+    </div>
   </div>
 </define-mixin>

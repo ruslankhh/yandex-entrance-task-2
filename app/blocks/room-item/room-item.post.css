@@ -1,5 +1,14 @@
 .room-item {
+  position: relative;
+
+  &__body {
+    padding-top: $room-item-body-padding-top;
+    padding-bottom: $room-item-body-padding-bottom;
+    z-index: 1;
+  }
+
   &__title {
+    color: $room-item-title-color;
     font-family: $room-item-title-font-family;
     font-size: $room-item-title-font-size;
     line-height: $room-item-title-line-height;
@@ -11,14 +20,66 @@
     margin-top: 2px;
   }
 
+  &__tail {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 7px;
+    height: $slot-height;
+    width: calc(100vw - 245px);
+  }
+
+  &__slot {
+    width: 6.371014%; // 65.94px / 1035px
+
+    &:first-child {
+      width: 2.989372%; // (65.94px - 33px - 2px) / 1035px = 30.94px / 1035px
+    }
+
+    &:last-child {
+      width: 1.443478%; // (65.94px - 53px + 2px) / 1035px = 14.94px / 1035px
+    }
+  }
+
+  &--tail-true {
+    .room-item__tail {
+      display: flex;
+    }
+  }
+
+  &:hover:not(:disabled):not(&--disabled),
+  &--hover:not(:disabled):not(&--disabled) {
+    .room-item__title {
+      color: $room-item-title-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  &:active:not(:disabled):not(&--disabled),
+  &--active:not(:disabled):not(&--disabled) {
+    .room-item__title {
+      color: $room-item-title-active-color;
+    }
+  }
+
+  &:focus:not(:disabled):not(&--disabled),
+  &--focus:not(:disabled):not(&--disabled) {
+    .room-item__title {
+      color: $room-item-title-focus-color;
+    }
+  }
+
   &:disabled,
   &--disabled {
+    .room-item__title {
+      color: $room-item-title-disabled-color;
+      -webkit-font-smoothing: antialiased;
+    }
+
     .room-item__text {
       color: $room-item-text-disabled-color;
       -webkit-font-smoothing: antialiased;
     }
   }
-
-  @mixin outline;
-  @mixin disabled;
 }
