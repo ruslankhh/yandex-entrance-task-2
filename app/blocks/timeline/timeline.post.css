@@ -1,9 +1,15 @@
 .timeline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
   height: 100%;
 
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__indicator,
   &__item {
     position: relative;
     color: $timeline-item-color;
@@ -34,6 +40,26 @@
       right: 0;
       height: 10000px;
       pointer-events: none;
+    }
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 20px;
+    width: 0;
+
+    &-text {
+      color: #FFFFFF;
+      background-color: #007DFF;
+      border-radius: 100px;
+      line-height: 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &::after {
+      border-right: solid $header-shadow-width #007DFF;
     }
   }
 

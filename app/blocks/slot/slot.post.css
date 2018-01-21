@@ -98,13 +98,16 @@
     }
   }
 
-  &:hover,
-  &.slot--hover,
-  &:active,
-  &.slot--active {
-    .slot__button {
-      z-index: 11;
-    }
+  &:hover .slot__button,
+  &.slot--hover .slot__button,
+  &:focus .slot__button,
+  &.slot--focus .slot__button,
+  &:active .slot__button,
+  &.slot--active .slot__button,
+  .slot__button:hover,
+  .slot__button:focus,
+  .slot__button:active {
+    z-index: 11;
   }
 
   &--tooltip-false {
