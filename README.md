@@ -107,23 +107,20 @@ blocks/
 
 #### Список компонентов
 
-- button
-- calendar
-- datapicker
-- event-item
-- icon
-- input
-- image
-- link
-- menu
-- modal
-- room-item
-- rooms-list
-- slot
-- timeline
-- timetable
-- tooltip
-- user-item
+- [x] button
+- [ ] calendar
+- [ ] datapicker
+- [ ] event-item
+- [ ] input
+- [x] image
+- [x] link
+- [ ] modal
+- [x] room-item
+- [x] rooms-list
+- [x] slot
+- [ ] timeline
+- [x] tooltip
+- [x] user-item
 
 ### 3. Вёрстка
 
