@@ -2,9 +2,9 @@
   <block name="title">Shri 2018 2</block>
   <block name="content">
     <div block="page" mods="elements">
-      <div block="container" mods="id:1 width:full">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:1">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="room-item" title="Прачечная" text="до 10 человек"></mixin>
@@ -24,9 +24,9 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:2 width:full bg:lighter">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:2 bg:lighter">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="user-item" username="Лекс Лютер" userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg"></mixin>
@@ -38,9 +38,9 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:3 width:full">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:3">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="button" mods="icon:edit size:xs circle"></mixin>
@@ -52,10 +52,10 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:4 width:full bg:light">
-        <div elem="row">
+      <div block="container" mods="id:4 bg:light">
+        <div elem="row" mods="width:lg">
           <h3 elem="title">Свободный слот переговорной</h3>
-          <div block="grid" mods="padding-right">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="slot" mods="type:primary"/>
@@ -71,10 +71,10 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:5 width:full">
-        <div elem="row">
+      <div block="container" mods="id:5">
+        <div elem="row" mods="width:lg">
           <h3 elem="title">Всё занято</h3>
-          <div block="grid" mods="padding-right">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="slot" mods="type:secondary"/>
@@ -90,9 +90,9 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:6 width:full bg:lighter">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:6 bg:lighter">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="button" mods="type:primary size:md">Создать встречу</mixin>
@@ -112,39 +112,32 @@
           </div>
         </div>
       </div>
-      <div block="container" mods="id:7 width:full">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:7">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right padding:bottom">
             <div elem="item" mods="col:2">
               <div elem="item-title">Normal</div>
-              <mixin name="input" mods="size:md" id="users-1" label="Участники" placeholder="О чём будете говорить?"></mixin>
+              <mixin name="input" mods="size:md type:select" id="users-1" label="Участники" placeholder="О чём будете говорить?"></mixin>
             </div>
             <div elem="item" mods="col:2">
               <div elem="item-title">Pressed</div>
-              <mixin name="input" mods="size:md focus"  id="users-2" label="Участники" value="To"></mixin>
+              <mixin name="input" mods="size:md type:select focus opened"  id="users-2" label="Участники" value="To"></mixin>
             </div>
-          </div>
-        </div>
-        <div elem="row">
-          <div block="grid" mods="padding-right">
             <div elem="item" mods="col:2">
               <div elem="item-title">Hover</div>
-              <mixin name="input" mods="size:md hover" id="users-3" label="Участники"></mixin>
+              <mixin name="input" mods="size:md type:select hover" id="users-3" label="Участники"></mixin>
             </div>
-          </div>
-        </div>
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+            <div elem="item" mods="col:2"></div>
             <div elem="item" mods="col:2">
               <div elem="item-title">Filled</div>
-              <mixin name="input" mods="size:lg filled" id="users-4" label="Участники" value="Дарт Вейдер"></mixin>
+              <mixin name="input" mods="size:lg type:select filled" id="users-4" label="Участники" value="Дарт Вейдер"></mixin>
             </div>
           </div>
         </div>
       </div>
-      <div block="container" mods="id:8 width:full bg:lighter">
-        <div elem="row">
-          <div block="grid" mods="padding-right">
+      <div block="container" mods="id:8 bg:lighter">
+        <div elem="row" mods="width:lg">
+          <div block="grid" mods="padding:right">
             <div elem="item" mods="col:4">
               <div elem="item-title">Normal</div>
               <mixin name="button" mods="type:secondary size:md">Отмена</mixin>

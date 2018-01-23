@@ -1,0 +1,37 @@
+.input-group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+
+  &__separator {
+    font-family: $input-group-separator-font-family;
+    padding-left: $input-group-separator-padding-left;
+    padding-right: $input-group-separator-padding-right;
+
+    &,
+    &--size-md {
+      font-size: $input-group-separator-md-font-size;
+      height: $input-group-separator-md-height;
+      line-height: $input-group-separator-md-line-height;
+      letter-spacing: $input-group-separator-md-letter-spacing;
+      padding-top: $input-group-separator-md-padding-top;
+      padding-bottom: $input-group-separator-md-padding-bottom;
+    }
+
+    &--size-lg {
+      font-size: $input-group-separator-lg-font-size;
+      height: $input-group-separator-lg-height;
+      line-height: $input-group-separator-lg-line-height;
+      letter-spacing: $input-group-separator-lg-letter-spacing;
+      padding-top: $input-group-separator-lg-padding-top;
+      padding-bottom: $input-group-separator-lg-padding-bottom;
+    }
+  }
+
+  &--type-data {
+    .input:first-child {
+      min-width: 56.666667%;
+      margin-right: 16px;
+    }
+  }
+}

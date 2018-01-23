@@ -1,10 +1,10 @@
 .tooltip {
-  z-index: 15;
+  z-index: $tooltip-z-index;
 
   &::before,
   &::after {
-    background-color: #fff;
-    border-radius: 2px;
+    background-color: $tooltip-bg-color;
+    border-radius: calc($tooltip-border-radius / 4);
     content: '';
     display: block;
     position: absolute;
@@ -16,24 +16,24 @@
   }
 
   &::before {
-    box-shadow: 0 1px 16px 0 rgba(0, 44, 92, 0.28);
+    box-shadow: 0 1px 16px 0 $tooltip-box-shadow-color;
   }
 
   &__body {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 16px 0 rgba(0, 44, 92, 0.28);
+    background-color: $tooltip-bg-color;
+    border-radius: $tooltip-border-radius;
+    box-shadow: 0 1px 16px 0 $tooltip-box-shadow-color;
     position: absolute;
     top: 7px;
     left: 0;
     transform: translateX(-50%);
-    padding-top: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    padding-top: $tooltip-padding-top;
+    padding-left: $tooltip-padding-left;
+    padding-right: $tooltip-padding-right;
+    padding-bottom: $tooltip-padding-bottom;
     max-width: 100vw;
-    min-height: 113px;
-    width: 338px;
+    min-height: $tooltip-min-height;
+    width: $tooltip-width;
   }
 
   &__button {
@@ -43,26 +43,24 @@
   }
 
   &__title {
-    color: #000000;
-    font-family: $font-family-bold;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 24px;
-    min-height: 24px;
+    font-family: $tooltip-title-font-family;
+    font-size: $tooltip-title-font-size;
+    letter-spacing: $tooltip-title-letter-spacing;
+    line-height: $tooltip-title-line-height;
+    min-height: $tooltip-title-min-height;
   }
 
   &__text {
-    font-family: $font-family;
-    font-size: 13px;
-    color: #000000;
-    letter-spacing: 0;
-    line-height: 17px;
-    margin-top: 3px;
-    margin-bottom: 14px;
+    font-family: $tooltip-text-font-family;
+    font-size: $tooltip-text-font-size;
+    letter-spacing: $tooltip-text-letter-spacing;
+    line-height: $tooltip-text-line-height;
+    margin-top: $tooltip-text-margin-top;
+    margin-bottom: $tooltip-text-margin-bottom;
 
     &-seporator {
-      padding-left: 4px;
-      padding-right: 4px;
+      padding-left: 0.3em;
+      padding-right: 0.3em;
     }
   }
 }

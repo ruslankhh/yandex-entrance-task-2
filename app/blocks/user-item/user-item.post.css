@@ -1,34 +1,37 @@
 .user-item {
   display: inline-block;
-  background-color: #E9ECEF;
-  border-radius: 16px;
-  line-height: 22px;
-  min-height: 24px;
-  min-width: 142px;
-  padding: 0 32px 0 32px;
+  background-color: $user-item-bg-color;
+  border-radius: $user-item-border-radius;
+  height: $user-item-height;
+  line-height: $user-item-line-height;
+  min-width: $user-item-min-width;
+  padding-top: $user-item-padding-top;
+  padding-left: $user-item-padding-left;
+  padding-right: $user-item-padding-right;
+  padding-bottom: $user-item-padding-bottom;
   position: relative;
 
   &__image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 12px;
-    height: 24px;
+    border-radius: $user-item-border-radius;
+    height: $user-item-height;
     left: 0;
     position: absolute;
     top: 0;
-    width: 24px;
+    width: $user-item-height;
   }
 
   &__name,
   &__content {
     display: inline-block;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: $user-item-font-size;
+    line-height: $user-item-line-height;
   }
 
   &__content {
-    color: #858E98;
+    color: $user-item-content-color;
     letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
   }

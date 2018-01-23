@@ -7,6 +7,7 @@
     font-size: $input-label-font-size;
     margin-bottom: 5px;
     letter-spacing: 0;
+    line-height: 1;
   }
 
   &__button {
@@ -14,6 +15,10 @@
     position: absolute;
     right: 2px;
     bottom: 0;
+  }
+
+  &__container {
+    position: relative;
   }
 
   &__control {
@@ -35,7 +40,7 @@
       letter-spacing: $input-md-letter-spacing;
       padding-bottom: $input-md-padding-bottom;
       padding-left: $input-md-padding-left;
-      padding-right: $input-md-padding-right;
+      padding-right: $input-md-padding-left;
       padding-top: $input-md-padding-top;
 
       & ~ .input__button {
@@ -50,7 +55,7 @@
       letter-spacing: $input-lg-letter-spacing;
       padding-bottom: $input-lg-padding-bottom;
       padding-left: $input-lg-padding-left;
-      padding-right: $input-lg-padding-right;
+      padding-right: $input-lg-padding-left;
       padding-top: $input-lg-padding-top;
 
       & ~ .input__button {
@@ -67,27 +72,45 @@
     &--focus {
       border-color: $input-focus-border-color;
 
-      & ~ .input__button.button--icon-arrow-down {
-        display: block;
-      }
-
       & ~ .input__button.button--icon-close {
         display: none;
       }
 
-      &.input__control--opened {
-        & ~ .input__button.button--icon-arrow-down {
-          display: none;
+      &.input__control--type-select {
+        &.input__control--size-md {
+          padding-right: $input-md-padding-right;
         }
 
-        & ~ .input__button.button--icon-arrow-up {
+        &.input__control--size-lg {
+          padding-right: $input-lg-padding-right;
+        }
+
+        & ~ .input__button.button--icon-arrow-down {
           display: block;
+        }
+
+        &.input__control--opened {
+          & ~ .input__button.button--icon-arrow-down {
+            display: none;
+          }
+
+          & ~ .input__button.button--icon-arrow-up {
+            display: block;
+          }
         }
       }
     }
 
     &--filled {
       &:not(:focus):not(&--focus) {
+        &.input__control--size-md {
+          padding-right: $input-md-padding-right;
+        }
+
+        &.input__control--size-lg {
+          padding-right: $input-lg-padding-right;
+        }
+
         & ~ .input__button.button--icon-close {
           display: block;
         }
@@ -96,5 +119,9 @@
 
     @mixin outline;
     @mixin disabled;
+  }
+
+  &__users-list {
+    margin-top: 12px;
   }
 }

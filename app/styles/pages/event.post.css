@@ -1,0 +1,7 @@
+.page {
+  &--event {
+    .body {
+      padding-bottom: $footer-height;
+    }
+  }
+}

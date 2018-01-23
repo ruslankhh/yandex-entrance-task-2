@@ -1,0 +1,12 @@
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &__item {
+    margin-top: $users-list-item-margin-top;
+    margin-left: $users-list-item-margin-left;
+    margin-right: $users-list-item-margin-right;
+    margin-bottom: $users-list-item-margin-bottom;
+  }
+}

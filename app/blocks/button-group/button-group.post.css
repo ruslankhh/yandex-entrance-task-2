@@ -1,0 +1,11 @@
+.button-group {
+  &__item {
+    margin-bottom: $button-group-item-margin-bottom;
+  }
+
+  &--width-full {
+    .button-group__item {
+      width: 100%;
+    }
+  }
+}

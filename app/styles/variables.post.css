@@ -1,45 +1,7 @@
-// Fonts
-$font-family-light: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
-$font-family-regular: HelveticaNeue, Helvetica, Arial, sans-serif;
-$font-family-medium: "HelveticaNeue-Medium", Helvetica, Arial, sans-serif;
-$font-family-bold: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
-
-$font-family: $font-family-regular;
-
-// Header
-$header-shadow-color: #E9ECEF;
-$header-shadow-width: 1px;
-$header-padding-top: 18px;
-$header-padding-left: 24px;
-$header-padding-right: 24px;
-$header-padding-bottom: 17px;
-
-// Grid
-$content-width: 1000px;
-
-$container-padding-x: 12px;
-$container-padding-top: 10px;
-$container-padding-bottom: 14px;
-$container-width: calc($content-width + 2 * $container-padding-x);
-$container-bg-color: #FFFFFF;
-$container-bg-color-light: #E9ECEF;
-$container-bg-color-lighter: rgba(73, 76, 83, 0.02);
-$container-title-color: #C7C7C7;
-
-$row-width: $content-width;
-
-$grid-padding-top: 10px;
-$grid-padding-bottom: 14px;
-$grid-padding-x: 20px;
-
-// Link
-$link-color: inherit;
-$link-hover-color: #0070E0;
-$link-focus-color: #0070E0;
-$link-active-color: #1D54FE;
-$link-disabled-color: #858E98;
-
-// Outline
+// Common
+$bg-color: #FFFFFF;
+$shadow-color: #E9ECEF;
+$shadow-width: 1px;
 $outline: none;
 
 // Images
@@ -50,20 +12,55 @@ $image-arrow-up-url: "../images/arrow-up.svg";
 $image-close-url: "../images/close.svg";
 $image-edit-url: "../images/edit.svg";
 
-// Slot
-$slot-color: #FFFFFF;
-$slot-border-radius: 2px;
-$slot-height: 28px;
+// Fonts
+$font-family-light: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+$font-family-regular: HelveticaNeue, Helvetica, Arial, sans-serif;
+$font-family-medium: "HelveticaNeue-Medium", Helvetica, Arial, sans-serif;
+$font-family-bold: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+$font-family: $font-family-regular;
 
-$slot-primary-bg-color: #FFFFFF;
-$slot-primary-hover-bg-color: #1D54FE;
-$slot-primary-focus-bg-color: #1D54FE;
-$slot-primary-active-bg-color: #1D00FE;
+// Fix
+$fix-padding-top: 4px;
+$fix-padding-bottom: 3px;
 
-$slot-secondary-bg-color: #D5DFE9;
-$slot-secondary-hover-bg-color: #98A9B9;
-$slot-secondary-focus-bg-color: #98A9B9;
-$slot-secondary-active-bg-color: #8594A2;
+// Header
+$header-bg-color: $bg-color;
+$header-height: calc(71px + $fix-padding-top);
+$header-padding-top: calc(18px + $fix-padding-top);
+$header-padding-left: 24px;
+$header-padding-right: 24px;
+$header-padding-bottom: 17px;
+$header-shadow-color: $shadow-color;
+$header-shadow-width: $shadow-width;
+
+// Footer
+$footer-bg-color: $bg-color;
+$footer-height: calc(76px + $fix-padding-bottom);
+$footer-padding-top: 20px;
+$footer-padding-left: 20px;
+$footer-padding-right: 20px;
+$footer-padding-bottom: calc(20px + $fix-padding-bottom);
+$footer-shadow-color: $shadow-color;
+$footer-shadow-width: $shadow-width;
+
+// Grid
+$content-lg-width: 1000px;
+$content-md-width: 896px;
+
+$container-padding-x: 12px;
+$container-padding-top: 0px; // 10px;
+$container-padding-bottom: 14px;
+$container-lg-width: calc($content-lg-width + 2 * $container-padding-x);
+$container-md-width: calc($content-md-width + 2 * $container-padding-x);
+$container-bg-color: $bg-color;
+$container-bg-color-light: #E9ECEF;
+$container-bg-color-lighter: rgba(73, 76, 83, 0.02);
+$container-title-color: #C7C7C7;
+
+$grid-padding-top: 0px; // 10px;
+$grid-padding-bottom: 0px; // 4px;
+$grid-padding-x: 16px;
+$grid-padding-offset-x: 40px;
 
 // Button
 $button-bg-color: #E9ECEF;
@@ -78,13 +75,6 @@ $button-xs-height: 24px;
 $button-xs-padding-top: 4px;
 $button-xs-padding-bottom: 4px;
 $button-xs-padding-x: 10px;
-
-$button-sm-font-size: 13px;
-$button-sm-line-height: 16px;
-$button-sm-height: 36px;
-$button-sm-padding-top: 10px;
-$button-sm-padding-bottom: 10px;
-$button-sm-padding-x: 16px;
 
 $button-md-font-size: 13px;
 $button-md-line-height: 16px;
@@ -106,6 +96,19 @@ $button-secondary-hover-bg-color: #DDE0E4;
 $button-secondary-focus-bg-color: #DDE0E4;
 $button-secondary-active-bg-color: #C8CDD3;
 $button-secondary-disabled-bg-color: #E2E5E8;
+
+// Button-group
+$button-group-item-margin-bottom: 8px;
+
+// Calendar
+
+// Datapicker
+$datapicker-font-family: $font-family-medium;
+$datapicker-font-size: 15px;
+
+// Event-item
+
+// Image
 
 // Input
 $input-label-font-size: 13px;
@@ -137,9 +140,49 @@ $input-lg-padding-right: calc($input-lg-height - 2 * $input-border-width);
 $input-hover-border-color: #007DFF;
 $input-focus-border-color: #007DFF;
 
-// Datapicker
-$datapicker-font-family: $font-family-medium;
-$datapicker-font-size: 15px;
+// Input-group
+$input-group-separator-font-family: $font-family-bold;
+$input-group-separator-padding-left: 4px;
+$input-group-separator-padding-right: 4px;
+
+$input-group-separator-md-font-size: $input-md-font-size;
+$input-group-separator-md-height: $input-md-height;
+$input-group-separator-md-line-height: $input-md-line-height;
+$input-group-separator-md-letter-spacing: $input-md-letter-spacing;
+$input-group-separator-md-padding-top: $input-md-padding-top;
+$input-group-separator-md-padding-bottom: $input-md-padding-bottom;
+
+$input-group-separator-lg-font-size: $input-lg-font-size;
+$input-group-separator-lg-height: $input-lg-height;
+$input-group-separator-lg-line-height: $input-lg-line-height;
+$input-group-separator-lg-letter-spacing: $input-lg-letter-spacing;
+$input-group-separator-lg-padding-top: $input-lg-padding-top;
+$input-group-separator-lg-padding-bottom: $input-lg-padding-bottom;
+
+// Link
+$link-color: inherit;
+$link-hover-color: #0070E0;
+$link-focus-color: #0070E0;
+$link-active-color: #1D54FE;
+$link-disabled-color: #858E98;
+
+// Modal
+
+// Room-item
+$room-item-body-padding-top: 4px;
+$room-item-body-padding-bottom: 4px;
+$room-item-title-color: inherit;
+$room-item-title-hover-color: #0070E0;
+$room-item-title-focus-color: #0070E0;
+$room-item-title-active-color: #1D54FE;
+$room-item-title-disabled-color: #858E98;
+$room-item-title-font-family: $font-family-medium;
+$room-item-title-font-size: 15px;
+$room-item-title-line-height: 17px;
+$room-item-text-font-size: 13px;
+$room-item-text-line-height: 17px;
+$room-item-text-disabled-color: #858E98;
+$room-item-tail-bg-color: #D5DFE9;
 
 // Rooms-list
 $rooms-list-title-font-family: $font-family-bold;
@@ -150,21 +193,20 @@ $rooms-list-title-padding-bottom: 5px;
 $rooms-list-body-padding-bottom: 12px;
 $rooms-list-item-margin-bottom: 8px;
 
-// Room-item
-$room-item-body-padding-top: 4px;
-$room-item-body-padding-bottom: 4px;
-$room-item-title-color: $link-color;
-$room-item-title-hover-color: $link-hover-color;
-$room-item-title-active-color: $link-active-color;
-$room-item-title-focus-color: $link-focus-color;
-$room-item-title-disabled-color: $link-disabled-color;
-$room-item-title-font-family: $font-family-medium;
-$room-item-title-font-size: 15px;
-$room-item-title-line-height: 17px;
-$room-item-text-font-size: 13px;
-$room-item-text-line-height: 17px;
-$room-item-text-disabled-color: #858E98;
-$room-item-tail-bg-color: $slot-secondary-bg-color;
+// Slot
+$slot-color: #FFFFFF;
+$slot-border-radius: 2px;
+$slot-height: 28px;
+
+$slot-primary-bg-color: #FFFFFF;
+$slot-primary-hover-bg-color: #1D54FE;
+$slot-primary-focus-bg-color: #1D54FE;
+$slot-primary-active-bg-color: #1D00FE;
+
+$slot-secondary-bg-color: #D5DFE9;
+$slot-secondary-hover-bg-color: #98A9B9;
+$slot-secondary-focus-bg-color: #98A9B9;
+$slot-secondary-active-bg-color: #8594A2;
 
 // Timeline
 $timeline-item-color: #252525;
@@ -179,6 +221,47 @@ $timeline-item-text-line-height: 20px;
 $timeline-item-text-height: 20px;
 $timeline-item-text-width: 50px;
 
-// Pages
-$page-index-padding-top: 4px;
-$page-index-header-height: 71px;
+// Tooltip
+$tooltip-bg-color: $bg-color;
+$tooltip-border-radius: 8px;
+$tooltip-box-shadow-color: rgba(0, 44, 92, 0.28);
+$tooltip-padding-top: 14px;
+$tooltip-padding-left: 16px;
+$tooltip-padding-right: 16px;
+$tooltip-padding-bottom: 16px;
+$tooltip-min-height: 113px;
+$tooltip-width: 338px;
+$tooltip-z-index: 15;
+
+$tooltip-title-font-family: $font-family-bold;
+$tooltip-title-font-size: 15px;
+$tooltip-title-letter-spacing: 0;
+$tooltip-title-line-height: 24px;
+$tooltip-title-min-height: 24px;
+
+$tooltip-text-font-family: $font-family;
+$tooltip-text-font-size: 13px;
+$tooltip-text-letter-spacing: 0;
+$tooltip-text-line-height: 17px;
+$tooltip-text-margin-top: 3px;
+$tooltip-text-margin-bottom: 14px;
+
+// User-item
+$user-item-bg-color: #E9ECEF;
+$user-item-content-color: #858E98;
+$user-item-border-radius: 12px;
+$user-item-font-size: 13px;
+$user-item-line-height: 13px;
+$user-item-height: 24px;
+$user-item-line-height: 22px;
+$user-item-min-width: 142px;
+$user-item-padding-top: 0;
+$user-item-padding-left: 32px;
+$user-item-padding-right: 32px;
+$user-item-padding-bottom: 0;
+
+// Users-list
+$users-list-item-margin-top: 0;
+$users-list-item-margin-left: 0;
+$users-list-item-margin-right: 8px;
+$users-list-item-margin-bottom: 8px;

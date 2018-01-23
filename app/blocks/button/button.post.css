@@ -7,6 +7,15 @@
   position: relative;
   text-align: center;
 
+  &__time {
+    font-family: $font-family-bold;
+    margin-right: 12px;
+  }
+
+  &__description {
+    font-family: $font-family;
+  }
+
   &--type-primary {
     background-color: $button-primary-bg-color;
     color: $button-primary-color;
@@ -78,16 +87,6 @@
     padding-left: $button-xs-padding-x;
     padding-right: $button-xs-padding-x;
     padding-top: $button-xs-padding-top;
-  }
-
-  &--size-sm {
-    font-size: $button-sm-font-size;
-    line-height: $button-sm-line-height;
-    height: $button-sm-height;
-    padding-bottom: $button-sm-padding-bottom;
-    padding-left: $button-sm-padding-x;
-    padding-right: $button-sm-padding-x;
-    padding-top: $button-sm-padding-top;
   }
 
   &--size-md {
@@ -189,6 +188,11 @@
     .button__text {
       background-image: url($image-edit-url);
     }
+  }
+
+  &--text-left {
+    text-align: left;
+    padding-left: 10px;
   }
 
   @mixin cursor;
