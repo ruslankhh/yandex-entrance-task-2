@@ -17,7 +17,18 @@ function replaceExpressions(tree, attrs, content) {
 		if (typeof node === 'object') {
 			if (node.attrs) {
 				Object.keys(node.attrs).forEach((name) => {
-					node.attrs[name] = replaceExpression(node.attrs[name], attrs);
+					if (name.startsWith(delimiters[0]) && name.endsWith(delimiters[1])) {
+						const attrName = name.slice(
+							delimiters[0].length,
+							name.length - delimiters[1].length
+						);
+						if (attrs[attrName]) {
+							node.attrs[replaceExpression(name, attrs)] = '';
+						}
+						delete node.attrs[name];
+					} else {
+						node.attrs[name] = replaceExpression(node.attrs[name], attrs);
+					}
 				});
 			}
 			if (node.tag === 'content') {
