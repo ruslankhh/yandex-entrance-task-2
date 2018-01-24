@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Shri 2018 2</title>
@@ -47,40 +47,41 @@
 <body>
   
     <div class="page page--event">
-      <div class="header">
-        
+      <form id="form-event-edit">
+        <div class="header">
+          
   <img src="assets/images/logo.svg" height="" width="" alt="" title="" class="image image--type-logo">
 
-      </div>
-      <div class="body">
-        <div class="container container--width-md container--center">
-          <h3 class="title">
-            <span>Редактирование встречи</span>
-            
-  <button class="button button--icon-close button--size-xs button--circle title__button">
+        </div>
+        <div class="body">
+          <div class="container container--width-md container--center">
+            <h3 class="title">
+              <span>Редактирование встречи</span>
+              
+  <button id="button" type="button" class="button button--icon-close button--size-xs button--circle title__button">
     <div class="button__text"></div>
   </button>
 
-          </h3>
-          <div class="grid grid--padding-bottom">
-            <div class="grid__item grid__item--col-2">
-              
+            </h3>
+            <div class="grid grid--padding-bottom">
+              <div class="grid__item grid__item--col-2">
+                
   <div class="input">
     <label for="theme" class="input__label">Тема</label>
     <div class="input__container">
       <input id="theme" type="text" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ" class="input__control input__control--size-md input__control--filled">
       
-  <button class="button button--icon-close button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
+  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
@@ -88,28 +89,28 @@
     
   </div>
 
-            </div>
-            <div class="grid__item grid__item--col-2">
-              
-  <div class="input-group input-group--type-data">
-    
+              </div>
+              <div class="grid__item grid__item--col-2">
                 
+  <div class="input-group input-group--type-date">
+    
+                  
   <div class="input input-group__item">
     <label for="date" class="input__label">Дата</label>
     <div class="input__container">
-      <input id="date" type="text" placeholder="" value="14 декабря, 2017" class="input__control input__control--size-md">
+      <input id="date" type="date" placeholder="" value="2017-12-14" class="input__control input__control--size-md">
       
-  <button class="button button--icon-close button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
+  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
@@ -117,23 +118,23 @@
     
   </div>
 
-                
+                  
   <div class="input input-group__item">
     <label for="timestart" class="input__label">Начало</label>
     <div class="input__container">
-      <input id="timestart" type="text" placeholder="" value="16:00" class="input__control input__control--size-md">
+      <input id="timestart" type="time" placeholder="" value="16:00" class="input__control input__control--size-md">
       
-  <button class="button button--icon-close button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
+  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
@@ -141,24 +142,24 @@
     
   </div>
 
-                <div class="input-group__separator">—</div>
-                
+                  <div class="input-group__separator">—</div>
+                  
   <div class="input input-group__item">
     <label for="timeend" class="input__label">Конец</label>
     <div class="input__container">
-      <input id="timeend" type="text" placeholder="" value="16:30" class="input__control input__control--size-md">
+      <input id="timeend" type="time" placeholder="" value="16:30" class="input__control input__control--size-md">
       
-  <button class="button button--icon-close button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
+  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
@@ -166,42 +167,42 @@
     
   </div>
 
-              
+                
   </div>
 
-            </div>
-            <div class="grid__item grid__item--col-2">
-              
+              </div>
+              <div class="grid__item grid__item--col-2">
+                
   <div class="input">
     <label for="users" class="input__label">Участники</label>
     <div class="input__container">
       <input id="users" type="text" placeholder="Например, Тор Одинович" value="" class="input__control input__control--size-md input__control--type-select">
       
-  <button class="button button--icon-close button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
+  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
     <div class="button__text"></div>
   </button>
 
       
-  <button class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
+  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
   </button>
 
     </div>
     
-                
+                  
   <div class="users-list input__users-list">
     
-                  
+                    
   <div class="user-item users-list__item">
     <div style="background-image: url(https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg)" class="user-item__image"></div>
     <div class="user-item__name">Лекс Лютер</div>
     
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
+  <button id="button" type="button" class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
     <div class="button__text"></div>
   </button>
 
@@ -209,12 +210,12 @@
     
   </div>
 
-                  
+                    
   <div class="user-item users-list__item">
     <div style="background-image: url(https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64)" class="user-item__image"></div>
     <div class="user-item__name">Томас Андерсон</div>
     
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
+  <button id="button" type="button" class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
     <div class="button__text"></div>
   </button>
 
@@ -222,12 +223,12 @@
     
   </div>
 
-                  
+                    
   <div class="user-item users-list__item">
     <div style="background-image: url(https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg)" class="user-item__image"></div>
     <div class="user-item__name">Дарт Вейдер</div>
     
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
+  <button id="button" type="button" class="button button--icon-close button--size-xs button--circle button--transparent button-- user-item__button">
     <div class="button__text"></div>
   </button>
 
@@ -235,23 +236,23 @@
     
   </div>
 
+                  
+  </div>
+
                 
   </div>
 
-              
-  </div>
-
-            </div>
-            <div class="grid__item grid__item--col-2">
-              <h6>Ваша переговорка</h6>
-              
+              </div>
+              <div class="grid__item grid__item--col-2">
+                <h6>Ваша переговорка</h6>
+                
   <div class="button-group button-group--width-full">
     
-                
+                  
   <div class="button-checkbox button-checkbox--size-md button-group__item">
     <input id="room-1" type="checkbox" hidden="" checked="" class="button-checkbox__checkbox">
     <div class="button-checkbox__content">
-                  
+                    
   <div class="room-item room-item--type-short">
     <div class="room-item__body">
       <div class="room-item__title"></div>
@@ -268,36 +269,37 @@
     </div>
   </div>
 
-                </div>
+                  </div>
     <label for="room-1" class="button-checkbox__button">
       <div class="button-checkbox__button-text"></div>
     </label>
   </div>
 
-              
+                
   </div>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        
-  <button class="button button--type-secondary button--size-md">
+        <div class="footer">
+          
+  <button id="button" type="button" class="button button--type-secondary button--size-md">
     <div class="button__text">Отмена</div>
   </button>
 
-        
-  <button class="button button--type-secondary button--size-md">
+          
+  <button id="button" type="button" class="button button--type-secondary button--size-md">
     <div class="button__text">Удалить встречу</div>
   </button>
 
-        
-  <button class="button button--type-secondary button--size-md">
+          
+  <button id="button" type="button" class="button button--type-secondary button--size-md">
     <div class="button__text">Сохранить</div>
   </button>
 
-      </div>
+        </div>
+      </form>
     </div>
     
   <div id="modal-event-remove" class="modal modal--center modal--opened">
@@ -311,12 +313,12 @@
       <h3 class="modal__title">Встреча будет<br>удалена безвозвратно</h3>
       <div class="grid grid--margin-true grid--center modal__footer">
         
-  <button class="button button--type-secondary button--size-md grid__item">
+  <button id="button" type="button" class="button button--type-secondary button--size-md grid__item">
     <div class="button__text">Отмена</div>
   </button>
 
         
-  <button class="button button--type-secondary button--size-md grid__item">
+  <button id="button" type="button" class="button button--type-secondary button--size-md grid__item">
     <div class="button__text">Удалить</div>
   </button>
 

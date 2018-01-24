@@ -2,67 +2,69 @@
   <block name="title">Shri 2018 2</block>
   <block name="content">
     <div block="page" mods="event">
-      <div block="header">
-        <mixin name="image" mods="type:logo" src="assets/images/logo.svg"></mixin>
-      </div>
-      <div block="body">
-        <div block="container" mods="width:md center">
-          <h3 block="title">
-            <span>Редактирование встречи</span>
-            <mixin name="button" mods="icon:close size:xs circle" mix="block:title elem:button"></mixin>
-          </h3>
-          <div block="grid" mods="padding:bottom">
-            <div elem="item" mods="col:2">
-              <mixin name="input" mods="size:md filled" id="theme" label="Тема" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ"></mixin>
-            </div>
-            <div elem="item" mods="col:2">
-              <mixin name="input-group" mods="type:data">
-                <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="date" label="Дата" value="14 декабря, 2017"></mixin>
-                <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="timestart" label="Начало" value="16:00"></mixin>
-                <div class="input-group__separator">—</div>
-                <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="timeend" label="Конец" value="16:30"></mixin>
-              </mixin>
-            </div>
-            <div elem="item" mods="col:2">
-              <mixin name="input" mods="size:md type:select" id="users" label="Участники" placeholder="Например, Тор Одинович">
-                <mixin name="users-list" mix="block:input elem:users-list">
-                  <mixin
-                    name="user-item"
-                    mix="block:users-list elem:item"
-                    username="Лекс Лютер"
-                    userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg"
-                  ></mixin>
-                  <mixin
-                    name="user-item"
-                    mix="block:users-list elem:item"
-                    username="Томас Андерсон"
-                    userimage="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64"
-                  ></mixin>
-                  <mixin
-                    name="user-item"
-                    mix="block:users-list elem:item"
-                    username="Дарт Вейдер"
-                    userimage="https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
-                  ></mixin>
+      <form id="form-event-edit">
+        <div block="header">
+          <mixin name="image" mods="type:logo" src="assets/images/logo.svg"></mixin>
+        </div>
+        <div block="body">
+          <div block="container" mods="width:md center">
+            <h3 block="title">
+              <span>Редактирование встречи</span>
+              <mixin name="button" mods="icon:close size:xs circle" mix="block:title elem:button"></mixin>
+            </h3>
+            <div block="grid" mods="padding:bottom">
+              <div elem="item" mods="col:2">
+                <mixin name="input" mods="size:md filled" id="theme" label="Тема" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ"></mixin>
+              </div>
+              <div elem="item" mods="col:2">
+                <mixin name="input-group" mods="type:date">
+                  <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="date" type="date" label="Дата" value="2017-12-14"></mixin>
+                  <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="timestart" type="time" label="Начало" value="16:00"></mixin>
+                  <div class="input-group__separator">—</div>
+                  <mixin name="input" mods="size:md" mix="block:input-group elem:item" id="timeend" type="time" label="Конец" value="16:30"></mixin>
                 </mixin>
-              </mixin>
-            </div>
-            <div elem="item" mods="col:2">
-              <h6>Ваша переговорка</h6>
-              <mixin name="button-group" mods="width:full">
-                <mixin name="button-checkbox" id="room-1" mods="size:md" attr="checked" mix="block:button-group elem:item">
-                  <mixin name="room-item" mods="type:short" time="16:00—16:30" room="Готем" floor="4 этаж"></mixin>
+              </div>
+              <div elem="item" mods="col:2">
+                <mixin name="input" mods="size:md type:select" id="users" label="Участники" placeholder="Например, Тор Одинович">
+                  <mixin name="users-list" mix="block:input elem:users-list">
+                    <mixin
+                      name="user-item"
+                      mix="block:users-list elem:item"
+                      username="Лекс Лютер"
+                      userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg"
+                    ></mixin>
+                    <mixin
+                      name="user-item"
+                      mix="block:users-list elem:item"
+                      username="Томас Андерсон"
+                      userimage="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64"
+                    ></mixin>
+                    <mixin
+                      name="user-item"
+                      mix="block:users-list elem:item"
+                      username="Дарт Вейдер"
+                      userimage="https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    ></mixin>
+                  </mixin>
                 </mixin>
-              </mixin>
+              </div>
+              <div elem="item" mods="col:2">
+                <h6>Ваша переговорка</h6>
+                <mixin name="button-group" mods="width:full">
+                  <mixin name="button-checkbox" id="room-1" mods="size:md" attr="checked" mix="block:button-group elem:item">
+                    <mixin name="room-item" mods="type:short" time="16:00—16:30" room="Готем" floor="4 этаж"></mixin>
+                  </mixin>
+                </mixin>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div block="footer">
-        <mixin name="button" mods="type:secondary size:md">Отмена</mixin>
-        <mixin name="button" mods="type:secondary size:md">Удалить встречу</mixin>
-        <mixin name="button" mods="type:secondary size:md">Сохранить</mixin>
-      </div>
+        <div block="footer">
+          <mixin name="button" mods="type:secondary size:md">Отмена</mixin>
+          <mixin name="button" mods="type:secondary size:md">Удалить встречу</mixin>
+          <mixin name="button" mods="type:secondary size:md">Сохранить</mixin>
+        </div>
+      </form>
     </div>
     <mixin name="modal" mods="center opened" id="modal-event-remove">
       <mixin name="image" src="assets/images/emoji1.svg" width="40" height="40"></mixin>

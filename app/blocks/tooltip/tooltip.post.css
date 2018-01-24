@@ -1,4 +1,5 @@
 .tooltip {
+  cursor: default;
   z-index: $tooltip-z-index;
 
   &::before,
