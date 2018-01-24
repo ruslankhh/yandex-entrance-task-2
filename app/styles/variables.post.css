@@ -201,6 +201,34 @@ $link-active-color: #1D54FE;
 $link-disabled-color: #858E98;
 
 // Modal
+$modal-z-index: 99;
+$modal-backdrop-bg-color: rgba(0, 16, 33, 0.40);
+
+$modal-body-bg-color: $bg-color;
+$modal-body-shadow-color: rgba(0, 44, 92, 0.28);
+$modal-body-border-radius: 8px;
+$modal-body-padding-top: 32px;
+$modal-body-padding-left: 62px;
+$modal-body-padding-right: 62px;
+$modal-body-padding-bottom: 92px;
+$modal-body-width: 444px;
+$modal-body-min-height: 228px;
+$modal-body-margin-left: 4px;
+
+$modal-title-margin-top: 13px;
+$modal-title-margin-bottom: 9px;
+
+$modal-content-font-size: 15px;
+$modal-content-letter-spacing: 0;
+$modal-content-line-height: 17px;
+$modal-content-p-margin-top: 0;
+$modal-content-p-margin-bottom: 5px;
+
+$modal-footer-padding-top: 24px;
+$modal-footer-padding-left: 62px;
+$modal-footer-padding-right: 62px;
+$modal-footer-padding-bottom: 32px;
+$modal-footer-min-height: 92px;
 
 // Room-item
 $room-item-body-padding-top: 4px;
@@ -232,7 +260,7 @@ $slot-color: #FFFFFF;
 $slot-border-radius: 2px;
 $slot-height: 28px;
 
-$slot-primary-bg-color: #FFFFFF;
+$slot-primary-bg-color: $bg-color;
 $slot-primary-hover-bg-color: #1D54FE;
 $slot-primary-focus-bg-color: #1D54FE;
 $slot-primary-active-bg-color: #1D00FE;

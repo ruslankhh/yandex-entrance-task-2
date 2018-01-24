@@ -1,3 +1,75 @@
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: $modal-z-index;
 
+  &__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $modal-backdrop-bg-color;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body {
+    background-color: $modal-body-bg-color;
+    border-radius: $modal-body-border-radius;
+    box-shadow: 0 1px 16px 0 $modal-body-shadow-color;
+    display: block;
+    min-height: $modal-body-min-height;
+    width: $modal-body-width;
+    position: relative;
+    padding-top: $modal-body-padding-top;
+    padding-left: $modal-body-padding-left;
+    padding-right: $modal-body-padding-right;
+    padding-bottom: $modal-body-padding-bottom;
+    margin-left: $modal-body-margin-left;
+  }
+
+  &__content {
+    font-size: $modal-content-font-size;
+    letter-spacing: $modal-content-letter-spacing;
+    line-height:$modal-content-line-height;
+
+    p {
+      margin-top: $modal-content-p-margin-top;
+      margin-bottom: $modal-content-p-margin-bottom;
+    }
+
+    & > *:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-top: $modal-title-margin-top;
+    margin-bottom: $modal-title-margin-bottom;
+  }
+
+  &__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: $modal-footer-padding-top;
+    padding-left: $modal-footer-padding-left;
+    padding-right: $modal-footer-padding-right;
+    padding-bottom: $modal-footer-padding-bottom;
+    min-height: $modal-footer-min-height;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--opened {
+    display: flex;
+  }
 }

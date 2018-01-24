@@ -42,7 +42,7 @@
 
   &__button {
     position: absolute;
-    top: 1px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -73,15 +73,12 @@
     &:checked ~ .button-checkbox__content {
       background-color: $button-checkbox-checked-bg-color;
       color: $button-checkbox-checked-color;
-
-      .button-checkbox__content {
-        -webkit-font-smoothing: antialiased;
-      }
+      -webkit-font-smoothing: antialiased;
     }
 
     &:checked ~ .button-checkbox__button {
       left: auto;
-      right: 0;
+      right: 2px;
       width: $button-checkbox-checked-button-md-width;
 
       .button-checkbox__button-text {

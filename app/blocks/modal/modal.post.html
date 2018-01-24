@@ -1,5 +1,10 @@
-<define-mixin name="modal" mods mix class>
-  <div block="modal" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
-    <content></content>
+<define-mixin name="modal" mods mix id="modal-0">
+  <div block="modal" mods="{{ mods }}" mix="{{ mix }}" id="{{ id }}">
+    <div elem="backdrop"></div>
+    <div elem="body">
+      <div elem="content">
+        <content></content>
+      </div>
+    </div>
   </div>
 </define-mixin>

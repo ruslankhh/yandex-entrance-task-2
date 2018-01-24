@@ -110,11 +110,6 @@
     }
   }
 
-  &--wrap-false {
-    flex-wrap: nowrap;
-    align-items: flex-end;
-  }
-
   &--padding-false {
     margin-left: 0;
     margin-right: 0;
@@ -124,5 +119,23 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
+
+  &--wrap-false {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+
+  &--margin-true {
+    margin: 0;
+    
+    .grid__item {
+      margin: 0 8px;
+    }
+  }
+
+  &--center {
+    justify-content: center;
+    align-items: center;
   }
 }

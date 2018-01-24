@@ -13,7 +13,7 @@
   &__button {
     display: none;
     position: absolute;
-    right: 2px;
+    right: 0;
     bottom: 0;
   }
 
