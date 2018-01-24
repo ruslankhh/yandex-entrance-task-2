@@ -116,7 +116,7 @@ blocks/
 - [ ] datepicker
 - [x] event-item
 - [x] input
-- [x] input-select
+- [x] input-datalist
 - [x] input-group
 - [x] image
 - [x] link
