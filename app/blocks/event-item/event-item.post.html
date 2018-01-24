@@ -1,0 +1,12 @@
+<define-mixin name="event-item" mods mix title date time room floor>
+  <div block="event-item" mods="{{ mods }}" mix="{{ mix }}">
+    <div elem="title">{{ title }}</div>
+    <div elem="text">
+      <span elem="date">{{ date }}, </span>
+      <span elem="time">{{ time }}</span>
+      <span elem="text-separator">·</span>
+      <span elem="room">{{ room }}</span>
+    </div>
+    <content></content>
+  </div>
+</define-mixin>

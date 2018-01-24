@@ -1,0 +1,23 @@
+.event-item {
+  &__title {
+    font-family: $event-item-title-font-family;
+    font-size: $event-item-title-font-size;
+    letter-spacing: $event-item-title-letter-spacing;
+    line-height: $event-item-title-line-height;
+    min-height: $event-item-title-min-height;
+  }
+
+  &__text {
+    font-family: $event-item-text-font-family;
+    font-size: $event-item-text-font-size;
+    letter-spacing: $event-item-text-letter-spacing;
+    line-height: $event-item-text-line-height;
+    margin-top: $event-item-text-margin-top;
+    margin-bottom: $event-item-text-margin-bottom;
+
+    &-separator {
+      padding-left: 0.3em;
+      padding-right: 0.3em;
+    }
+  }
+}

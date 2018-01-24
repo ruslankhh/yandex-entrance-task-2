@@ -1,0 +1,109 @@
+.button-checkbox {
+  position: relative;
+
+  &:hover,
+  &.button-checkbox--hover {
+    .button-checkbox__content {
+      background-color: $button-checkbox-hover-bg-color;
+    }
+  }
+
+  &:focus,
+  &.button-checkbox--focus {
+    .button-checkbox__content {
+      background-color: $button-checkbox-focus-bg-color;
+    }
+  }
+
+  &:active,
+  &.button-checkbox--active {
+    .button-checkbox__content {
+      background-color: $button-checkbox-active-bg-color;
+    }
+  }
+
+  &:disabled,
+  &.button-checkbox--disabled {
+    .button-checkbox__content {
+      background-color: $button-checkbox-disabled-bg-color;
+      color: $button-checkbox-disabled-color;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  &__content {
+    font-family: $button-checkbox-font-family;
+    border: none;
+    border-radius: $button-checkbox-border-radius;
+    color: $button-checkbox-color;
+    background-color: $button-checkbox-bg-color;
+    text-align: left;
+  }
+
+  &__button {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-text {
+      display: none;
+      background-image: url($image-close-white-url);
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    &:hover,
+    &.button-checkbox__button--hover,
+    &:focus,
+    &.button-checkbox__button--focus {
+      .button-checkbox__button-text {
+        opacity: 1;
+      }
+    }
+
+    @mixin cursor;
+  }
+
+  &__checkbox {
+    &:checked ~ .button-checkbox__content {
+      background-color: $button-checkbox-checked-bg-color;
+      color: $button-checkbox-checked-color;
+
+      .button-checkbox__content {
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+
+    &:checked ~ .button-checkbox__button {
+      left: auto;
+      right: 0;
+      width: $button-checkbox-checked-button-md-width;
+
+      .button-checkbox__button-text {
+        display: block;
+      }
+    }
+  }
+
+  &,
+  &--size-md {
+    height: $button-checkbox-md-height;
+
+    .button-checkbox__content {
+      font-size: $button-checkbox-md-font-size;
+      line-height: $button-checkbox-md-line-height;
+      padding-bottom: $button-checkbox-md-padding-bottom;
+      padding-left: $button-checkbox-md-padding-left;
+      padding-right: $button-checkbox-md-padding-right;
+      padding-top: $button-checkbox-md-padding-top;
+    }
+  }
+
+  @mixin outline;
+  @mixin disabled;
+}

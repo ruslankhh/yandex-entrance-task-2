@@ -39,6 +39,10 @@
 
   
 
+  
+
+  
+
 </head>
 <body>
   
@@ -52,9 +56,15 @@
   <div class="room-item">
     <div class="room-item__body">
       <div class="room-item__title">Прачечная</div>
-      <div class="room-item__text">до 10 человек</div>
+      <div class="room-item__text">
+        <span class="room-item__capacity">до 10 человек</span>
+        <span class="room-item__time">undefined</span>
+        <span class="room-item__room">undefined</span>
+        <span class="room-item__text-separator">·</span>
+        <span class="room-item__floor">undefined</span>
+      </div>
     </div>
-    <div class="room-item__tail">
+    <div class="room-item__content">
       
     </div>
   </div>
@@ -66,9 +76,15 @@
   <div class="room-item room-item--hover">
     <div class="room-item__body">
       <div class="room-item__title">Жёлтый дом</div>
-      <div class="room-item__text">до 10 человек</div>
+      <div class="room-item__text">
+        <span class="room-item__capacity">до 10 человек</span>
+        <span class="room-item__time">undefined</span>
+        <span class="room-item__room">undefined</span>
+        <span class="room-item__text-separator">·</span>
+        <span class="room-item__floor">undefined</span>
+      </div>
     </div>
-    <div class="room-item__tail">
+    <div class="room-item__content">
       
     </div>
   </div>
@@ -80,9 +96,15 @@
   <div class="room-item room-item--active">
     <div class="room-item__body">
       <div class="room-item__title">Жёлтый дом</div>
-      <div class="room-item__text">до 10 человек</div>
+      <div class="room-item__text">
+        <span class="room-item__capacity">до 10 человек</span>
+        <span class="room-item__time">undefined</span>
+        <span class="room-item__room">undefined</span>
+        <span class="room-item__text-separator">·</span>
+        <span class="room-item__floor">undefined</span>
+      </div>
     </div>
-    <div class="room-item__tail">
+    <div class="room-item__content">
       
     </div>
   </div>
@@ -94,9 +116,15 @@
   <div class="room-item room-item--disabled">
     <div class="room-item__body">
       <div class="room-item__title">Оранжевый тюльпан</div>
-      <div class="room-item__text">до 10 человек</div>
+      <div class="room-item__text">
+        <span class="room-item__capacity">до 10 человек</span>
+        <span class="room-item__time">undefined</span>
+        <span class="room-item__room">undefined</span>
+        <span class="room-item__text-separator">·</span>
+        <span class="room-item__floor">undefined</span>
+      </div>
     </div>
-    <div class="room-item__tail">
+    <div class="room-item__content">
       
     </div>
   </div>
@@ -176,7 +204,7 @@
     
   <button class="button button--type-primary slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -188,31 +216,13 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+            
+    
     </div>
   </div>
 
-    
-            
   </div>
 </div>
             <div class="grid__item grid__item--col-4">
@@ -222,7 +232,7 @@
     
   <button class="button button--type-primary button--hover slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -234,30 +244,12 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+    
     </div>
   </div>
 
-    
   </div>
 
             </div>
@@ -268,7 +260,7 @@
     
   <button class="button button--type-primary button--active slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -280,30 +272,12 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+    
     </div>
   </div>
 
-    
   </div>
 
             </div>
@@ -321,7 +295,7 @@
     
   <button class="button button--type-secondary slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -333,31 +307,13 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+            
+    
     </div>
   </div>
 
-    
-            
   </div>
 </div>
             <div class="grid__item grid__item--col-4">
@@ -367,7 +323,7 @@
     
   <button class="button button--type-secondary button--hover slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -379,30 +335,12 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+    
     </div>
   </div>
 
-    
   </div>
 
             </div>
@@ -413,7 +351,7 @@
     
   <button class="button button--type-secondary button--active button--tooltip-false slot__button">
     <div class="button__text">
-      <div class="slot__text">+</div>
+      <div class="slot__button-text">+</div>
     </div>
   </button>
 
@@ -425,30 +363,12 @@
     <div class="button__text"></div>
   </button>
 
-      <div class="tooltip__title"></div>
-      <div class="tooltip__text">
-        <span class="tooltip__data"></span>
-        <span class="tooltip__text-seporator">·</span>
-        <span class="tooltip__room"></span>
-      </div>
       
-  <div class="user-item user-item--button-false user-item--transparent tooltip__user-item">
-    <div style="background-image: url()" class="user-item__image"></div>
-    <div class="user-item__name"></div>
-    
-  <button class="button button--icon-close button--size-xs button--circle button--transparent button--button-false button--transparent user-item__button">
-    <div class="button__text"></div>
-  </button>
-
-    <div class="user-item__content"></div>
-    
-  </div>
-
       
+    
     </div>
   </div>
 
-    
   </div>
 
             </div>

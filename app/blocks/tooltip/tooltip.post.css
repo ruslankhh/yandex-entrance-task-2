@@ -41,26 +41,4 @@
     top: 8px;
     right: 8px;
   }
-
-  &__title {
-    font-family: $tooltip-title-font-family;
-    font-size: $tooltip-title-font-size;
-    letter-spacing: $tooltip-title-letter-spacing;
-    line-height: $tooltip-title-line-height;
-    min-height: $tooltip-title-min-height;
-  }
-
-  &__text {
-    font-family: $tooltip-text-font-family;
-    font-size: $tooltip-text-font-size;
-    letter-spacing: $tooltip-text-letter-spacing;
-    line-height: $tooltip-text-line-height;
-    margin-top: $tooltip-text-margin-top;
-    margin-bottom: $tooltip-text-margin-bottom;
-
-    &-seporator {
-      padding-left: 0.3em;
-      padding-right: 0.3em;
-    }
-  }
 }

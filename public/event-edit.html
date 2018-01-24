@@ -55,7 +55,7 @@
       <div class="body">
         <div class="container container--width-md container--center">
           <h3 class="title">
-            <span>Новая встреча</span>
+            <span>Редактирование встречи</span>
             
   <button class="button button--icon-close button--size-xs button--circle title__button">
     <div class="button__text"></div>
@@ -68,7 +68,7 @@
   <div class="input">
     <label for="theme" class="input__label">Тема</label>
     <div class="input__container">
-      <input id="theme" type="text" placeholder="О чём будете говорить?" value="" class="input__control input__control--size-md">
+      <input id="theme" type="text" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ" class="input__control input__control--size-md input__control--filled">
       
   <button class="button button--icon-close button--size-md button--square button--transparent input__button">
     <div class="button__text"></div>
@@ -243,13 +243,13 @@
 
             </div>
             <div class="grid__item grid__item--col-2">
-              <h6>Рекомендованные переговорки</h6>
+              <h6>Ваша переговорка</h6>
               
   <div class="button-group button-group--width-full">
     
                 
   <div class="button-checkbox button-checkbox--size-md button-group__item">
-    <input id="rooms-1" type="checkbox" hidden="" class="button-checkbox__checkbox">
+    <input id="room-1" type="checkbox" hidden="" checked="" class="button-checkbox__checkbox">
     <div class="button-checkbox__content">
                   
   <div class="room-item room-item--type-short">
@@ -269,61 +269,7 @@
   </div>
 
                 </div>
-    <label for="rooms-1" class="button-checkbox__button">
-      <div class="button-checkbox__button-text"></div>
-    </label>
-  </div>
-
-                
-  <div class="button-checkbox button-checkbox--size-md button-group__item">
-    <input id="rooms-2" type="checkbox" hidden="" class="button-checkbox__checkbox">
-    <div class="button-checkbox__content">
-                  
-  <div class="room-item room-item--type-short">
-    <div class="room-item__body">
-      <div class="room-item__title"></div>
-      <div class="room-item__text">
-        <span class="room-item__capacity"></span>
-        <span class="room-item__time">16:00—16:30</span>
-        <span class="room-item__room">Поле непаханное</span>
-        <span class="room-item__text-separator">·</span>
-        <span class="room-item__floor">4 этаж</span>
-      </div>
-    </div>
-    <div class="room-item__content">
-      
-    </div>
-  </div>
-
-                </div>
-    <label for="rooms-2" class="button-checkbox__button">
-      <div class="button-checkbox__button-text"></div>
-    </label>
-  </div>
-
-                
-  <div class="button-checkbox button-checkbox--size-md button-group__item">
-    <input id="rooms-3" type="checkbox" hidden="" class="button-checkbox__checkbox">
-    <div class="button-checkbox__content">
-                  
-  <div class="room-item room-item--type-short">
-    <div class="room-item__body">
-      <div class="room-item__title"></div>
-      <div class="room-item__text">
-        <span class="room-item__capacity"></span>
-        <span class="room-item__time">16:00—16:30</span>
-        <span class="room-item__room">Тёмная башня</span>
-        <span class="room-item__text-separator">·</span>
-        <span class="room-item__floor">4 этаж</span>
-      </div>
-    </div>
-    <div class="room-item__content">
-      
-    </div>
-  </div>
-
-                </div>
-    <label for="rooms-3" class="button-checkbox__button">
+    <label for="room-1" class="button-checkbox__button">
       <div class="button-checkbox__button-text"></div>
     </label>
   </div>
@@ -342,8 +288,13 @@
   </button>
 
         
-  <button class="button button--type-primary button--size-md">
-    <div class="button__text">Создать встречу</div>
+  <button class="button button--type-secondary button--size-md">
+    <div class="button__text">Удалить встречу</div>
+  </button>
+
+        
+  <button class="button button--type-secondary button--size-md">
+    <div class="button__text">Сохранить</div>
   </button>
 
       </div>

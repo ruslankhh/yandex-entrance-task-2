@@ -1,10 +1,10 @@
-.datapicker {
+.datepicker {
   display: flex;
   justify-content: space-between;
 
   &__link {
-    font-family: $datapicker-font-family;
-    font-size: $datapicker-font-size;
+    font-family: $datepicker-font-family;
+    font-size: $datepicker-font-size;
     letter-spacing: 0;
     line-height: 23px;
   }

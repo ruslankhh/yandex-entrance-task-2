@@ -1,10 +1,16 @@
-<define-mixin name="room-item" mods mix title text>
+<define-mixin name="room-item" mods mix title capacity>
   <div block="room-item" mods="{{ mods }}" mix="{{ mix }}">
     <div elem="body">
       <div elem="title">{{ title }}</div>
-      <div elem="text">{{ text }}</div>
+      <div elem="text">
+        <span elem="capacity">{{ capacity }}</span>
+        <span elem="time">{{ time }}</span>
+        <span elem="room">{{ room }}</span>
+        <span elem="text-separator">·</span>
+        <span elem="floor">{{ floor }}</span>
+      </div>
     </div>
-    <div elem="tail">
+    <div elem="content">
       <content></content>
     </div>
   </div>

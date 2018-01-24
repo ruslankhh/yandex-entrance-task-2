@@ -8,12 +8,12 @@
       <div block="body">
         <div block="container" mods="width:md center">
           <h3 block="title">
-            <span>Новая встреча</span>
+            <span>Редактирование встречи</span>
             <mixin name="button" mods="icon:close size:xs circle" mix="block:title elem:button"></mixin>
           </h3>
           <div block="grid" mods="padding:bottom">
             <div elem="item" mods="col:2">
-              <mixin name="input" mods="size:md" id="theme" label="Тема" placeholder="О чём будете говорить?"></mixin>
+              <mixin name="input" mods="size:md filled" id="theme" label="Тема" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ"></mixin>
             </div>
             <div elem="item" mods="col:2">
               <mixin name="input-group" mods="type:data">
@@ -48,16 +48,10 @@
               </mixin>
             </div>
             <div elem="item" mods="col:2">
-              <h6>Рекомендованные переговорки</h6>
+              <h6>Ваша переговорка</h6>
               <mixin name="button-group" mods="width:full">
-                <mixin name="button-checkbox" id="rooms-1" mods="size:md" mix="block:button-group elem:item">
+                <mixin name="button-checkbox" id="room-1" mods="size:md" attr="checked" mix="block:button-group elem:item">
                   <mixin name="room-item" mods="type:short" time="16:00—16:30" room="Готем" floor="4 этаж"></mixin>
-                </mixin>
-                <mixin name="button-checkbox" id="rooms-2" mods="size:md" mix="block:button-group elem:item">
-                  <mixin name="room-item" mods="type:short" time="16:00—16:30" room="Поле непаханное" floor="4 этаж"></mixin>
-                </mixin>
-                <mixin name="button-checkbox" id="rooms-3" mods="size:md" mix="block:button-group elem:item">
-                  <mixin name="room-item" mods="type:short" time="16:00—16:30" room="Тёмная башня" floor="4 этаж"></mixin>
                 </mixin>
               </mixin>
             </div>
@@ -66,7 +60,8 @@
       </div>
       <div block="footer">
         <mixin name="button" mods="type:secondary size:md">Отмена</mixin>
-        <mixin name="button" mods="type:primary size:md">Создать встречу</mixin>
+        <mixin name="button" mods="type:secondary size:md">Удалить встречу</mixin>
+        <mixin name="button" mods="type:secondary size:md">Сохранить</mixin>
       </div>
     </div>
   </block>

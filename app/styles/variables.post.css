@@ -10,6 +10,7 @@ $image-arrow-right-url: "../images/arrow-right.svg";
 $image-arrow-down-url: "../images/arrow-down.svg";
 $image-arrow-up-url: "../images/arrow-up.svg";
 $image-close-url: "../images/close.svg";
+$image-close-white-url: "../images/close-white.svg";
 $image-edit-url: "../images/edit.svg";
 
 // Fonts
@@ -97,16 +98,49 @@ $button-secondary-focus-bg-color: #DDE0E4;
 $button-secondary-active-bg-color: #C8CDD3;
 $button-secondary-disabled-bg-color: #E2E5E8;
 
+// Button-checkbox
+$button-checkbox-hover-bg-color: $button-secondary-hover-bg-color;
+$button-checkbox-focus-bg-color: $button-secondary-focus-bg-color;
+$button-checkbox-active-bg-color: $button-secondary-active-bg-color;
+$button-checkbox-disabled-bg-color: $button-secondary-disabled-bg-color;
+$button-checkbox-disabled-color: $button-disabled-color;
+$button-checkbox-font-family: $button-font-family;
+$button-checkbox-border-radius: $button-border-radius;
+$button-checkbox-color: $button-color;
+$button-checkbox-bg-color: $button-secondary-bg-color;
+$button-checkbox-checked-bg-color: $button-primary-bg-color;
+$button-checkbox-checked-color: $button-primary-color;
+$button-checkbox-checked-button-md-width: $button-md-height;
+$button-checkbox-md-height: $button-md-height;
+$button-checkbox-md-font-size: $button-md-font-size;
+$button-checkbox-md-line-height: $button-md-line-height;
+$button-checkbox-md-padding-bottom: $button-md-padding-bottom;
+$button-checkbox-md-padding-left: 10px;
+$button-checkbox-md-padding-right: $button-md-padding-x;
+$button-checkbox-md-padding-top: $button-md-padding-top;
+
 // Button-group
 $button-group-item-margin-bottom: 8px;
 
 // Calendar
 
-// Datapicker
-$datapicker-font-family: $font-family-medium;
-$datapicker-font-size: 15px;
+// Datepicker
+$datepicker-font-family: $font-family-medium;
+$datepicker-font-size: 15px;
 
 // Event-item
+$event-item-title-font-family: $font-family-bold;
+$event-item-title-font-size: 15px;
+$event-item-title-letter-spacing: 0;
+$event-item-title-line-height: 24px;
+$event-item-title-min-height: 24px;
+
+$event-item-text-font-family: $font-family;
+$event-item-text-font-size: 13px;
+$event-item-text-letter-spacing: 0;
+$event-item-text-line-height: 17px;
+$event-item-text-margin-top: 3px;
+$event-item-text-margin-bottom: 14px;
 
 // Image
 
@@ -182,7 +216,7 @@ $room-item-title-line-height: 17px;
 $room-item-text-font-size: 13px;
 $room-item-text-line-height: 17px;
 $room-item-text-disabled-color: #858E98;
-$room-item-tail-bg-color: #D5DFE9;
+$room-item-content-bg-color: #D5DFE9;
 
 // Rooms-list
 $rooms-list-title-font-family: $font-family-bold;
@@ -232,19 +266,6 @@ $tooltip-padding-bottom: 16px;
 $tooltip-min-height: 113px;
 $tooltip-width: 338px;
 $tooltip-z-index: 15;
-
-$tooltip-title-font-family: $font-family-bold;
-$tooltip-title-font-size: 15px;
-$tooltip-title-letter-spacing: 0;
-$tooltip-title-line-height: 24px;
-$tooltip-title-min-height: 24px;
-
-$tooltip-text-font-family: $font-family;
-$tooltip-text-font-size: 13px;
-$tooltip-text-letter-spacing: 0;
-$tooltip-text-line-height: 17px;
-$tooltip-text-margin-top: 3px;
-$tooltip-text-margin-bottom: 14px;
 
 // User-item
 $user-item-bg-color: #E9ECEF;
