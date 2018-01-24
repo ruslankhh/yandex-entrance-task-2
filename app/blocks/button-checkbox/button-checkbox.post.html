@@ -1,6 +1,6 @@
-<define-mixin name="button-checkbox" id="" mods mix attr>
+<define-mixin name="button-checkbox" id="button-checkbox" mods mix attr>
   <div block="button-checkbox" mods="{{ mods }}" mix="{{ mix }}">
-    <input elem="checkbox" id="{{ id }}" type="checkbox" {{attr}} hidden />
+    <input elem="checkbox" id="{{ id }}" name="{{ id }}" type="checkbox" {{attr}} hidden />
     <div elem="content"><content></content></div>
     <label elem="button" for="{{ id }}">
       <div elem="button-text"></div>

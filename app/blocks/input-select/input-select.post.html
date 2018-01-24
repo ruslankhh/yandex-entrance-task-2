@@ -1,5 +1,5 @@
-<define-mixin name="input" mods mix id="input" label type="text" placeholder value>
-  <div block="input" mix="{{ mix }}">
+<define-mixin name="input-select" mods mix id="input" label type="text" placeholder value>
+  <div block="input-select" mix="{{ mix }}">
     <label elem="label" for="{{ id }}">{{ label }}</label>
     <div elem="container">
       <input
@@ -10,8 +10,11 @@
         type="{{ type }}"
         placeholder="{{ placeholder }}"
         value="{{ value }}"
-      />
+        list="{{ id }}-list"
+      ></input>
+      <datalist id="{{ id }}-list">
+        <content></content>
+      </datalist>
     </div>
-    <content></content>
   </div>
 </define-mixin>

@@ -117,20 +117,40 @@
           <div block="grid" mods="padding:right padding:bottom">
             <div elem="item" mods="col:2">
               <div elem="item-title">Normal</div>
-              <mixin name="input" mods="size:md type:select" id="users-1" label="Участники" placeholder="О чём будете говорить?"></mixin>
+              <mixin name="input-select" mods="size:md" id="users" label="Участники" placeholder="Например, Тор Одинович">
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              </mixin>
             </div>
             <div elem="item" mods="col:2">
               <div elem="item-title">Pressed</div>
-              <mixin name="input" mods="size:md type:select focus opened"  id="users-2" label="Участники" value="To"></mixin>
+              <mixin name="input-select" mods="size:md focus" id="users" label="Участники" placeholder="Например, Тор Одинович"  value="То">
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              </mixin>
             </div>
             <div elem="item" mods="col:2">
               <div elem="item-title">Hover</div>
-              <mixin name="input" mods="size:md type:select hover" id="users-3" label="Участники"></mixin>
+              <mixin name="input-select" mods="size:md hover" id="users" label="Участники" placeholder="Например, Тор Одинович">
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              </mixin>
             </div>
             <div elem="item" mods="col:2"></div>
             <div elem="item" mods="col:2">
               <div elem="item-title">Filled</div>
-              <mixin name="input" mods="size:lg type:select filled" id="users-4" label="Участники" value="Дарт Вейдер"></mixin>
+              <mixin name="input-select" mods="size:lg" id="users" label="Участники" placeholder="Например, Тор Одинович" value="Дарт Вейдер">
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              </mixin>
             </div>
           </div>
         </div>

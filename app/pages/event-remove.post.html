@@ -25,27 +25,31 @@
                 </mixin>
               </div>
               <div elem="item" mods="col:2">
-                <mixin name="input" mods="size:md type:select" id="users" label="Участники" placeholder="Например, Тор Одинович">
-                  <mixin name="users-list" mix="block:input elem:users-list">
-                    <mixin
-                      name="user-item"
-                      mix="block:users-list elem:item"
-                      username="Лекс Лютер"
-                      userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg"
-                    ></mixin>
-                    <mixin
-                      name="user-item"
-                      mix="block:users-list elem:item"
-                      username="Томас Андерсон"
-                      userimage="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64"
-                    ></mixin>
-                    <mixin
-                      name="user-item"
-                      mix="block:users-list elem:item"
-                      username="Дарт Вейдер"
-                      userimage="https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
-                    ></mixin>
-                  </mixin>
+                <mixin name="input-select" mods="size:md" id="users" label="Участники" placeholder="Например, Тор Одинович">
+                  <option label="7 этаж">Лекс Лютер</option>
+                  <option label="2 этаж">Томас Андерсон</option>
+                  <option label="1 этаж">Дарт Вейдер</option>
+                  <option label="2 этаж">Кларк Кент</option>
+                </mixin>
+                <mixin name="users-list" mix="block:input elem:users-list">
+                  <mixin
+                    name="user-item"
+                    mix="block:users-list elem:item"
+                    username="Лекс Лютер"
+                    userimage="https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg"
+                  ></mixin>
+                  <mixin
+                    name="user-item"
+                    mix="block:users-list elem:item"
+                    username="Томас Андерсон"
+                    userimage="https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64"
+                  ></mixin>
+                  <mixin
+                    name="user-item"
+                    mix="block:users-list elem:item"
+                    username="Дарт Вейдер"
+                    userimage="https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                  ></mixin>
                 </mixin>
               </div>
               <div elem="item" mods="col:2">

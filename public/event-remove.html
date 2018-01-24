@@ -43,6 +43,8 @@
 
   
 
+  
+
 </head>
 <body>
   
@@ -69,22 +71,7 @@
   <div class="input">
     <label for="theme" class="input__label">Тема</label>
     <div class="input__container">
-      <input id="theme" type="text" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ" class="input__control input__control--size-md input__control--filled">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+      <input id="theme" name="theme" type="text" placeholder="О чём будете говорить?" value="Тестовое задание в ШРИ" class="input__control input__control--size-md input__control--filled">
     </div>
     
   </div>
@@ -98,22 +85,7 @@
   <div class="input input-group__item">
     <label for="date" class="input__label">Дата</label>
     <div class="input__container">
-      <input id="date" type="date" placeholder="" value="2017-12-14" class="input__control input__control--size-md">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+      <input id="date" name="date" type="date" placeholder="" value="2017-12-14" class="input__control input__control--size-md">
     </div>
     
   </div>
@@ -122,22 +94,7 @@
   <div class="input input-group__item">
     <label for="timestart" class="input__label">Начало</label>
     <div class="input__container">
-      <input id="timestart" type="time" placeholder="" value="16:00" class="input__control input__control--size-md">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+      <input id="timestart" name="timestart" type="time" placeholder="" value="16:00" class="input__control input__control--size-md">
     </div>
     
   </div>
@@ -147,22 +104,7 @@
   <div class="input input-group__item">
     <label for="timeend" class="input__label">Конец</label>
     <div class="input__container">
-      <input id="timeend" type="time" placeholder="" value="16:30" class="input__control input__control--size-md">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+      <input id="timeend" name="timeend" type="time" placeholder="" value="16:30" class="input__control input__control--size-md">
     </div>
     
   </div>
@@ -173,31 +115,25 @@
               </div>
               <div class="grid__item grid__item--col-2">
                 
-  <div class="input">
-    <label for="users" class="input__label">Участники</label>
-    <div class="input__container">
-      <input id="users" type="text" placeholder="Например, Тор Одинович" value="" class="input__control input__control--size-md input__control--type-select">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+  <div class="input-select">
+    <label for="users" class="input-select__label">Участники</label>
+    <div class="input-select__container">
+      <input id="users" name="users" type="text" placeholder="Например, Тор Одинович" value="" list="users-list" class="input-select__control input-select__control--size-md">
+      <datalist id="users-list">
+        
+                  <option label="7 этаж">Лекс Лютер</option>
+                  <option label="2 этаж">Томас Андерсон</option>
+                  <option label="1 этаж">Дарт Вейдер</option>
+                  <option label="2 этаж">Кларк Кент</option>
+                
+      </datalist>
     </div>
-    
-                  
+  </div>
+
+                
   <div class="users-list input__users-list">
     
-                    
+                  
   <div class="user-item users-list__item">
     <div style="background-image: url(https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/u6aap4m90yu8hlqjxe2u.jpg)" class="user-item__image"></div>
     <div class="user-item__name">Лекс Лютер</div>
@@ -210,7 +146,7 @@
     
   </div>
 
-                    
+                  
   <div class="user-item users-list__item">
     <div style="background-image: url(https://i.mycdn.me/image?id=858985521355&ts=00000000ca0000031b&plc=WEB&tkn=*mSbbxyd2u6Q3hZMyXBNdpg-nDqo&fn=sqr_64)" class="user-item__image"></div>
     <div class="user-item__name">Томас Андерсон</div>
@@ -223,7 +159,7 @@
     
   </div>
 
-                    
+                  
   <div class="user-item users-list__item">
     <div style="background-image: url(https://yt3.ggpht.com/-mMtLtjl3Yww/AAAAAAAAAAI/AAAAAAAAAAA/C6VNIifmsPU/s48-c-k-no-mo-rj-c0xffffff/photo.jpg)" class="user-item__image"></div>
     <div class="user-item__name">Дарт Вейдер</div>
@@ -234,9 +170,6 @@
 
     <div class="user-item__content"></div>
     
-  </div>
-
-                  
   </div>
 
                 
@@ -250,7 +183,7 @@
     
                   
   <div class="button-checkbox button-checkbox--size-md button-group__item">
-    <input id="room-1" type="checkbox" hidden="" checked="" class="button-checkbox__checkbox">
+    <input id="room-1" name="room-1" type="checkbox" hidden="" checked="" class="button-checkbox__checkbox">
     <div class="button-checkbox__content">
                     
   <div class="room-item room-item--type-short">

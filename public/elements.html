@@ -43,6 +43,8 @@
 
   
 
+  
+
 </head>
 <body>
   
@@ -419,81 +421,57 @@
             <div class="grid__item grid__item--col-2">
               <div class="grid__item-title">Normal</div>
               
-  <div class="input">
-    <label for="users-1" class="input__label">Участники</label>
-    <div class="input__container">
-      <input id="users-1" type="text" placeholder="О чём будете говорить?" value="" class="input__control input__control--size-md input__control--type-select">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+  <div class="input-select">
+    <label for="users" class="input-select__label">Участники</label>
+    <div class="input-select__container">
+      <input id="users" name="users" type="text" placeholder="Например, Тор Одинович" value="" list="users-list" class="input-select__control input-select__control--size-md">
+      <datalist id="users-list">
+        
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              
+      </datalist>
     </div>
-    
   </div>
 
             </div>
             <div class="grid__item grid__item--col-2">
               <div class="grid__item-title">Pressed</div>
               
-  <div class="input">
-    <label for="users-2" class="input__label">Участники</label>
-    <div class="input__container">
-      <input id="users-2" type="text" placeholder="" value="To" class="input__control input__control--size-md input__control--type-select input__control--focus input__control--opened">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+  <div class="input-select">
+    <label for="users" class="input-select__label">Участники</label>
+    <div class="input-select__container">
+      <input id="users" name="users" type="text" placeholder="Например, Тор Одинович" value="То" list="users-list" class="input-select__control input-select__control--size-md input-select__control--focus">
+      <datalist id="users-list">
+        
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              
+      </datalist>
     </div>
-    
   </div>
 
             </div>
             <div class="grid__item grid__item--col-2">
               <div class="grid__item-title">Hover</div>
               
-  <div class="input">
-    <label for="users-3" class="input__label">Участники</label>
-    <div class="input__container">
-      <input id="users-3" type="text" placeholder="" value="" class="input__control input__control--size-md input__control--type-select input__control--hover">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+  <div class="input-select">
+    <label for="users" class="input-select__label">Участники</label>
+    <div class="input-select__container">
+      <input id="users" name="users" type="text" placeholder="Например, Тор Одинович" value="" list="users-list" class="input-select__control input-select__control--size-md input-select__control--hover">
+      <datalist id="users-list">
+        
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              
+      </datalist>
     </div>
-    
   </div>
 
             </div>
@@ -501,27 +479,19 @@
             <div class="grid__item grid__item--col-2">
               <div class="grid__item-title">Filled</div>
               
-  <div class="input">
-    <label for="users-4" class="input__label">Участники</label>
-    <div class="input__container">
-      <input id="users-4" type="text" placeholder="" value="Дарт Вейдер" class="input__control input__control--size-lg input__control--type-select input__control--filled">
-      
-  <button id="button" type="button" class="button button--icon-close button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-up button--size-md button--square button--transparent button--focus input__button">
-    <div class="button__text"></div>
-  </button>
-
-      
-  <button id="button" type="button" class="button button--icon-arrow-down button--size-md button--square button--transparent input__button">
-    <div class="button__text"></div>
-  </button>
-
+  <div class="input-select">
+    <label for="users" class="input-select__label">Участники</label>
+    <div class="input-select__container">
+      <input id="users" name="users" type="text" placeholder="Например, Тор Одинович" value="Дарт Вейдер" list="users-list" class="input-select__control input-select__control--size-lg">
+      <datalist id="users-list">
+        
+                <option label="7 этаж">Лекс Лютер</option>
+                <option label="2 этаж">Томас Андерсон</option>
+                <option label="1 этаж">Дарт Вейдер</option>
+                <option label="2 этаж">Кларк Кент</option>
+              
+      </datalist>
     </div>
-    
   </div>
 
             </div>

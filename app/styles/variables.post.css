@@ -193,6 +193,36 @@ $input-group-separator-lg-letter-spacing: $input-lg-letter-spacing;
 $input-group-separator-lg-padding-top: $input-lg-padding-top;
 $input-group-separator-lg-padding-bottom: $input-lg-padding-bottom;
 
+// Input-select
+$input-select-label-font-size: $input-label-font-size;
+$input-select-label-font-family: $input-label-font-family;
+
+$input-select-border-color: $input-border-color;
+$input-select-border-radius: $input-border-radius;
+$input-select-border-width: $input-border-width;
+$input-select-placeholder-color: $input-placeholder-color;
+
+$input-select-md-font-size: $input-md-font-size;
+$input-select-md-line-height: $input-md-line-height;
+$input-select-md-letter-spacing: $input-md-letter-spacing;
+$input-select-md-height: $input-md-height;
+$input-select-md-padding-top: $input-md-padding-top;
+$input-select-md-padding-bottom: $input-md-padding-bottom;
+$input-select-md-padding-left: $input-md-padding-left;
+$input-select-md-padding-right: $input-md-padding-right;
+
+$input-select-lg-font-size: $input-lg-font-size;
+$input-select-lg-line-height: $input-lg-line-height;
+$input-select-lg-letter-spacing: $input-lg-letter-spacing;
+$input-select-lg-height: $input-lg-height;
+$input-select-lg-padding-top: $input-lg-padding-top;
+$input-select-lg-padding-bottom: $input-lg-padding-bottom;
+$input-select-lg-padding-left: $input-lg-padding-left;
+$input-select-lg-padding-right: $input-lg-padding-right;
+
+$input-select-hover-border-color: $input-hover-border-color;
+$input-select-focus-border-color: $input-focus-border-color;
+
 // Link
 $link-color: inherit;
 $link-hover-color: #0070E0;
@@ -310,6 +340,8 @@ $user-item-padding-right: 32px;
 $user-item-padding-bottom: 0;
 
 // Users-list
+$users-list-margin-top: 12px;
+
 $users-list-item-margin-top: 0;
 $users-list-item-margin-left: 0;
 $users-list-item-margin-right: 8px;

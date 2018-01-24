@@ -42,10 +42,6 @@
       padding-left: $input-md-padding-left;
       padding-right: $input-md-padding-left;
       padding-top: $input-md-padding-top;
-
-      & ~ .input__button {
-        bottom: 1px;
-      }
     }
 
     &--size-lg {
@@ -57,10 +53,6 @@
       padding-left: $input-lg-padding-left;
       padding-right: $input-lg-padding-left;
       padding-top: $input-lg-padding-top;
-
-      & ~ .input__button {
-        bottom: 4px;
-      }
     }
 
     &:hover,
@@ -71,57 +63,9 @@
     &:focus,
     &--focus {
       border-color: $input-focus-border-color;
-
-      & ~ .input__button.button--icon-close {
-        display: none;
-      }
-
-      &.input__control--type-select {
-        &.input__control--size-md {
-          padding-right: $input-md-padding-right;
-        }
-
-        &.input__control--size-lg {
-          padding-right: $input-lg-padding-right;
-        }
-
-        & ~ .input__button.button--icon-arrow-down {
-          display: block;
-        }
-
-        &.input__control--opened {
-          & ~ .input__button.button--icon-arrow-down {
-            display: none;
-          }
-
-          & ~ .input__button.button--icon-arrow-up {
-            display: block;
-          }
-        }
-      }
-    }
-
-    &--filled {
-      &:not(:focus):not(&--focus) {
-        &.input__control--size-md {
-          padding-right: $input-md-padding-right;
-        }
-
-        &.input__control--size-lg {
-          padding-right: $input-lg-padding-right;
-        }
-
-        & ~ .input__button.button--icon-close {
-          display: block;
-        }
-      }
     }
 
     @mixin outline;
     @mixin disabled;
-  }
-
-  &__users-list {
-    margin-top: 12px;
   }
 }
