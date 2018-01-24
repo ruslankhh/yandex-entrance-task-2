@@ -113,7 +113,7 @@ blocks/
 - [x] button-checkbox
 - [x] button-group
 - [ ] calendar
-- [ ] datapicker
+- [ ] datepicker
 - [x] event-item
 - [x] input
 - [ ] input-select
