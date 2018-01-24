@@ -1,0 +1,71 @@
+.input-datalist {
+  position: relative;
+
+  &__label {
+    display: block;
+    font-family: $input-datalist-label-font-family;
+    font-size: $input-datalist-label-font-size;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  &__button {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__control {
+    border-color: $input-datalist-border-color;
+    border-style: solid;
+    border-radius: $input-datalist-border-radius;
+    border-width: $input-datalist-border-width;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+
+    &::placeholder {
+      color: $input-datalist-placeholder-color;
+    }
+
+    &--size-md {
+      font-size: $input-datalist-md-font-size;
+      height: $input-datalist-md-height;
+      line-height: $input-datalist-md-line-height;
+      letter-spacing: $input-datalist-md-letter-spacing;
+      padding-bottom: $input-datalist-md-padding-bottom;
+      padding-left: $input-datalist-md-padding-left;
+      padding-right: $input-datalist-md-padding-left;
+      padding-top: $input-datalist-md-padding-top;
+    }
+
+    &--size-lg {
+      font-size: $input-datalist-lg-font-size;
+      height: $input-datalist-lg-height;
+      line-height: $input-datalist-lg-line-height;
+      letter-spacing: $input-datalist-lg-letter-spacing;
+      padding-bottom: $input-datalist-lg-padding-bottom;
+      padding-left: $input-datalist-lg-padding-left;
+      padding-right: $input-datalist-lg-padding-left;
+      padding-top: $input-datalist-lg-padding-top;
+    }
+
+    &:hover,
+    &--hover {
+      border-color: $input-datalist-hover-border-color;
+    }
+
+    &:focus,
+    &--focus {
+      border-color: $input-datalist-focus-border-color;
+    }
+
+    @mixin outline;
+    @mixin disabled;
+  }
+}

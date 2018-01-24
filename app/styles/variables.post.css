@@ -194,34 +194,34 @@ $input-group-separator-lg-padding-top: $input-lg-padding-top;
 $input-group-separator-lg-padding-bottom: $input-lg-padding-bottom;
 
 // Input-select
-$input-select-label-font-size: $input-label-font-size;
-$input-select-label-font-family: $input-label-font-family;
+$input-datalist-label-font-size: $input-label-font-size;
+$input-datalist-label-font-family: $input-label-font-family;
 
-$input-select-border-color: $input-border-color;
-$input-select-border-radius: $input-border-radius;
-$input-select-border-width: $input-border-width;
-$input-select-placeholder-color: $input-placeholder-color;
+$input-datalist-border-color: $input-border-color;
+$input-datalist-border-radius: $input-border-radius;
+$input-datalist-border-width: $input-border-width;
+$input-datalist-placeholder-color: $input-placeholder-color;
 
-$input-select-md-font-size: $input-md-font-size;
-$input-select-md-line-height: $input-md-line-height;
-$input-select-md-letter-spacing: $input-md-letter-spacing;
-$input-select-md-height: $input-md-height;
-$input-select-md-padding-top: $input-md-padding-top;
-$input-select-md-padding-bottom: $input-md-padding-bottom;
-$input-select-md-padding-left: $input-md-padding-left;
-$input-select-md-padding-right: $input-md-padding-right;
+$input-datalist-md-font-size: $input-md-font-size;
+$input-datalist-md-line-height: $input-md-line-height;
+$input-datalist-md-letter-spacing: $input-md-letter-spacing;
+$input-datalist-md-height: $input-md-height;
+$input-datalist-md-padding-top: $input-md-padding-top;
+$input-datalist-md-padding-bottom: $input-md-padding-bottom;
+$input-datalist-md-padding-left: $input-md-padding-left;
+$input-datalist-md-padding-right: $input-md-padding-right;
 
-$input-select-lg-font-size: $input-lg-font-size;
-$input-select-lg-line-height: $input-lg-line-height;
-$input-select-lg-letter-spacing: $input-lg-letter-spacing;
-$input-select-lg-height: $input-lg-height;
-$input-select-lg-padding-top: $input-lg-padding-top;
-$input-select-lg-padding-bottom: $input-lg-padding-bottom;
-$input-select-lg-padding-left: $input-lg-padding-left;
-$input-select-lg-padding-right: $input-lg-padding-right;
+$input-datalist-lg-font-size: $input-lg-font-size;
+$input-datalist-lg-line-height: $input-lg-line-height;
+$input-datalist-lg-letter-spacing: $input-lg-letter-spacing;
+$input-datalist-lg-height: $input-lg-height;
+$input-datalist-lg-padding-top: $input-lg-padding-top;
+$input-datalist-lg-padding-bottom: $input-lg-padding-bottom;
+$input-datalist-lg-padding-left: $input-lg-padding-left;
+$input-datalist-lg-padding-right: $input-lg-padding-right;
 
-$input-select-hover-border-color: $input-hover-border-color;
-$input-select-focus-border-color: $input-focus-border-color;
+$input-datalist-hover-border-color: $input-hover-border-color;
+$input-datalist-focus-border-color: $input-focus-border-color;
 
 // Link
 $link-color: inherit;
