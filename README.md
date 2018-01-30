@@ -113,7 +113,7 @@ blocks/
 - [x] button-checkbox
 - [x] button-group
 - [ ] calendar
-- [ ] datepicker
+- [x] datepicker
 - [x] event-item
 - [x] input
 - [x] input-datalist
@@ -153,18 +153,30 @@ blocks/
 
 ### 4. Итоги
 
-- Сверстал главную страницу (http://localhost:8080/).
-- Не сверстал главную страницу с календарём (http://localhost:8080/index-calendar.html).
-- Сверстал страницу создания встречи (http://localhost:8080/event-create.html).
-- Не сверстал страницу создания встречи с состояниями (http://localhost:8080/event-create-state.html).
-- Сверстал страницу редактирования встречи (http://localhost:8080/event-edit.html).
-- Сверстал страницу с модальным окном Встреча создана (http://localhost:8080/event-created.html).
-- Сверстал страницу с модальным окном Удаление встречи (http://localhost:8080/event-remove.html).
-- Сверстал страницу Элементы (http://localhost:8080/elements.html).
-- Сверстал только под desktop.
-- Сверстал все компоненты, кроме calendar, datepicker.
+Сделал:
+
+- Десктопная версия.
+- Главная страница (http://localhost:8080/).
+- Страница создания встречи (http://localhost:8080/event-create.html).
+- Страница редактирования встречи (http://localhost:8080/event-edit.html).
+- Страница с модальным окном Встреча создана (http://localhost:8080/event-created.html).
+- Страница с модальным окном Удаление встречи (http://localhost:8080/event-remove.html).
+- Страницу Элементы (http://localhost:8080/elements.html).
+
+
+
+Осталось доделалть (помимо тудулиста):
+
+- Мобильная версия.
+- Компонент `calendar`.
 
 ### 5. Todolist
+
+#### 0.1.0
+
+-
+
+#### 0.2.0
 
 - [ ] Все стили для страниц (кроме страницы Елементы) вынести из неймспецса страницы, чтобы не обновлять класс у родителя.
 - [ ] Переименовать классы стилей `header` и `footer` в `app-header` и `app-footer`, а `page` в `app`.
@@ -182,7 +194,10 @@ blocks/
 - [ ] В блоке `timeline` в первом элементе заменить текст на число и добавить `":00"` через CSS.
 - [ ] У элемента `slot__button` убрать боковые `padding`-и.
 - [ ] Создать блок `slots-list`, где блоки `slots` не будут зависить от `room-item`.
+- [ ] В блоке `slot-list` попробовать сделать позиционирование элементов не через `flex`, а через `absolute`. Есть вероятность, что будут небольшие наложения элементов, нужно проверить.
 - [ ] В блоке `event-item` сделать мод `short-true` для показа модального окна с сообщением о создании события.
 - [ ] Блоку `button` добавить свойство `text-decoration: none;`.
 - [ ] В блоке `datepicker` переместить все стили с блока `link` на `datepicker__link`.
 - [ ] В блоке `button` для мода `circle` добавить минимальную ширину.
+- [ ] В блоке `room-item` переименовать `room-item__room` в `room-item__text-title`. И другим элементам внутри элемента `room-item__text`, добавить приставку `text-`.
+- [ ] В блоке `slot` поправить в Safari `tooltip`. Он не отсается отрытым, видимо не после нажатия `button` не остаётся ни в `focus`, ни в `active` состоянии.
