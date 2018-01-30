@@ -21,8 +21,8 @@ $font-family-bold: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 $font-family: $font-family-regular;
 
 // Fix
-$fix-padding-top: 4px;
-$fix-padding-bottom: 3px;
+$fix-padding-top: 0px; // 4px;
+$fix-padding-bottom: 0px; // 3px;
 
 // Header
 $header-bg-color: $bg-color;
